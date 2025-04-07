@@ -1,28 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="90" height="90" viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg">
+<svg width="96" height="96" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
   <!-- 16-bit style apple (manzana) -->
   
-  <!-- Apple body -->
-  <circle cx="45" cy="50" r="30" fill="#e60000" stroke="#cc0000" stroke-width="2"/>
-  
-  <!-- Apple indentation top -->
-  <path d="M 45,20 Q 40,15 45,10 Q 50,15 45,20" fill="#33cc33" stroke="#009900" stroke-width="1"/>
-  
   <!-- Apple stem -->
-  <rect x="43" y="18" width="4" height="10" rx="2" fill="#663300" stroke="#331100" stroke-width="1"/>
+  <rect x="7" y="1" width="2" height="2" fill="#663300" />
   
-  <!-- Leaf -->
-  <path d="M 43,20 Q 30,15 35,10" stroke="#33cc33" stroke-width="3" fill="#33cc33" stroke-linejoin="round"/>
+  <!-- Apple leaf -->
+  <rect x="9" y="1" width="2" height="1" fill="#33cc33" />
+  <rect x="10" y="2" width="2" height="1" fill="#33cc33" />
   
-  <!-- Apple highlight -->
-  <ellipse cx="35" cy="40" rx="10" ry="15" fill="#ff3333" opacity="0.5"/>
+  <!-- Apple top indentation -->
+  <rect x="7" y="3" width="2" height="1" fill="#cc0000" />
   
-  <!-- Small reflection highlight -->
-  <circle cx="55" cy="35" r="5" fill="#ffffff" opacity="0.3"/>
+  <!-- Apple body (red) -->
+  <rect x="4" y="4" width="8" height="1" fill="#e60000" />
+  <rect x="3" y="5" width="10" height="1" fill="#e60000" />
+  <rect x="2" y="6" width="12" height="4" fill="#e60000" />
+  <rect x="3" y="10" width="10" height="1" fill="#e60000" />
+  <rect x="4" y="11" width="8" height="1" fill="#e60000" />
   
-  <!-- Optional: bite taken out of apple -->
-  <path d="M 70,45 Q 60,55 70,65" fill="#ffffff" stroke="#cc0000" stroke-width="1"/>
+  <!-- Apple highlights -->
+  <rect x="4" y="6" width="1" height="3" fill="#ff3333" />
+  <rect x="10" y="5" width="1" height="1" fill="#ff6666" />
   
-  <!-- Shadow -->
-  <ellipse cx="45" cy="85" rx="20" ry="5" fill="#000000" opacity="0.2"/>
+  <!-- Apple bite area -->
+  <rect x="11" y="7" width="2" height="2" fill="#ffffff" />
+  <rect x="10" y="8" width="1" height="1" fill="#ffffff" />
+  
+  <!-- Apple shadow -->
+  <rect x="5" y="12" width="6" height="1" fill="#000000" opacity="0.3" />
 </svg> 

@@ -55,7 +55,7 @@ export const quizImagesMapping: QuizImageMapping = {
     height: 70
   },
   8: {
-    imageSrc: '/images/quiz-images/boy.svg',
+    imageSrc: '/images/quiz-images/boy-in-park.svg',
     altText: 'Hay un niño en el parque (There is a boy in the park)',
     width: 80,
     height: 120

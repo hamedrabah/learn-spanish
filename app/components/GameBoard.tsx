@@ -774,7 +774,7 @@ const GameBoard: React.FC = () => {
              style={{ left: '30%', marginLeft: '0px', bottom: '30px' }}>
           <div className={styles.characterImage}>
           </div>
-          <div className={styles.sword}></div>
+          <div className={styles.sword} style={{ imageRendering: 'pixelated' }}></div>
         </div>
 
         {/* Replace individual dialogue bubbles with a centered dialogue area at the top */}
@@ -816,7 +816,7 @@ const GameBoard: React.FC = () => {
              style={{ left: '55%', marginLeft: '0px', bottom: '30px' }}>
           <div className={styles.characterImage}>
           </div>
-          <div className={styles.sword}></div>
+          <div className={styles.sword} style={{ imageRendering: 'pixelated' }}></div>
         </div>
       </div>
 

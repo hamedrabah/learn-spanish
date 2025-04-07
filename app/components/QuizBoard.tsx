@@ -578,7 +578,7 @@ const QuizBoard: React.FC = () => {
              style={{ left: '55%', marginLeft: '0px', bottom: '30px' }}>
           <div className={styles.characterImage}>
           </div>
-          <div className={styles.sword}></div>
+          <div className={styles.sword} style={{ imageRendering: 'pixelated' }}></div>
         </div>
       </div>
 
