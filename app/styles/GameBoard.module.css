@@ -1327,6 +1327,24 @@
   box-shadow: none;
 }
 
+.helpButton {
+  background-color: transparent;
+  border: none;
+}
+
+.helpButton:hover {
+  background-color: transparent;
+  transform: scale(1.1);
+  box-shadow: none;
+}
+
+.opponentScore .helpButton {
+  padding: 2px;
+  margin: 0 5px;
+  border: none;
+  box-shadow: none;
+}
+
 /* Health Bar Styles */
 .healthBar {
   display: flex;

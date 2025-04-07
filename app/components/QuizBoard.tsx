@@ -17,6 +17,7 @@ const QuizBoard: React.FC = () => {
     quizComplete,
     gameState,
     gameMode,
+    playerHealth,
     answerQuizQuestion,
     nextQuizQuestion,
     resetGame
@@ -363,17 +364,20 @@ const QuizBoard: React.FC = () => {
   const handleAnswerSelection = (answer: string) => {
     if (isAnswerSubmitted) return;
     setSelectedAnswer(answer);
+    // Automatically submit the answer when an option is selected
+    handleAnswerSubmitWithAnswer(answer);
   };
 
-  const handleAnswerSubmit = async () => {
-    if (!selectedAnswer || isAnswerSubmitted || !currentQuizQuestion) return;
+  // New function to handle submission with a provided answer
+  const handleAnswerSubmitWithAnswer = async (answer: string) => {
+    if (isAnswerSubmitted || !currentQuizQuestion) return;
     
     // First, speak the complete sentence with Guybrush's voice
-    const completeSentence = createAnswerSentence(currentQuizQuestion.question, selectedAnswer);
+    const completeSentence = createAnswerSentence(currentQuizQuestion.question, answer);
     await speakText(completeSentence, true);
     
     // Then check if the answer is correct
-    const isCorrect = answerQuizQuestion(selectedAnswer);
+    const isCorrect = answerQuizQuestion(answer);
     setIsCorrectAnswer(isCorrect);
     setShowFeedback(true);
     setIsAnswerSubmitted(true);
@@ -386,6 +390,11 @@ const QuizBoard: React.FC = () => {
       setShowFeedback(false);
       nextQuizQuestion();
     }, 2000);
+  };
+
+  const handleAnswerSubmit = async () => {
+    if (!selectedAnswer || isAnswerSubmitted || !currentQuizQuestion) return;
+    await handleAnswerSubmitWithAnswer(selectedAnswer);
   };
 
   // Cleanup on component unmount
@@ -459,13 +468,41 @@ const QuizBoard: React.FC = () => {
       
       <div className={styles.scoreBoard}>
         <div className={styles.playerScore}>
-          <p>Correctas: {correctQuizAnswers}</p>
+          Correct: {correctQuizAnswers}/{currentQuizQuestionIndex}
         </div>
         <div className={styles.difficultyIndicator}>
-          <p>Pregunta {currentQuizQuestionIndex + 1} de {totalQuizQuestions}</p>
+          Question {currentQuizQuestionIndex + 1}/{totalQuizQuestions}
+        </div>
+        <div className={styles.healthBar}>
+          {[...Array(3)].map((_, i) => (
+            <div key={i} className={`${styles.heart} ${i < playerHealth ? styles.heartFull : styles.heartEmpty}`}>
+              <svg className={styles.heartSvg} viewBox="0 0 10 10">
+                <g className={styles.heartPixels}>
+                  <rect x="2" y="1" width="2" height="1" />
+                  <rect x="6" y="1" width="2" height="1" />
+                  <rect x="1" y="2" width="2" height="1" />
+                  <rect x="4" y="2" width="2" height="1" />
+                  <rect x="7" y="2" width="2" height="1" />
+                  <rect x="1" y="3" width="8" height="1" />
+                  <rect x="2" y="4" width="6" height="1" />
+                  <rect x="3" y="5" width="4" height="1" />
+                  <rect x="4" y="6" width="2" height="1" />
+                </g>
+              </svg>
+            </div>
+          ))}
         </div>
         <div className={styles.opponentScore}>
-          <p>Restantes: {totalQuizQuestions - currentQuizQuestionIndex}</p>
+          <button
+            onClick={toggleBackgroundMusic}
+            className={`${styles.iconButton} ${styles.muteButton}`}
+            aria-label={isMusicPlaying ? "Mute music" : "Play music"}
+          >
+            <img
+              src={isMusicPlaying ? "/images/sound.svg" : "/images/mute.svg"}
+              alt={isMusicPlaying ? "Sound on" : "Sound off"}
+            />
+          </button>
         </div>
       </div>
 
@@ -548,9 +585,6 @@ const QuizBoard: React.FC = () => {
 
       <div className={styles.responseContainer}>
         <div className={styles.translationToggle}>
-          <button onClick={toggleBackgroundMusic} className={styles.toggleButton}>
-            {isMusicPlaying ? "Silenciar Música" : "Reproducir Música"}
-          </button>
           <button onClick={() => {
             if (currentQuizQuestion) {
               // Remove the current question from spoken texts so it can be spoken again
@@ -582,14 +616,6 @@ const QuizBoard: React.FC = () => {
               <p>{option}</p>
             </button>
           ))}
-          
-          <button
-            onClick={handleAnswerSubmit}
-            className={styles.submitButton}
-            disabled={!selectedAnswer || isAnswerSubmitted || isSpeaking}
-          >
-            Responder
-          </button>
         </div>
       </div>
     </div>

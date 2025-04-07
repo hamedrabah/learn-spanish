@@ -14,6 +14,7 @@ const GameBoard: React.FC = () => {
     showTranslation,
     difficulty,
     gameMode,
+    playerHealth,
     selectResponse,
     toggleTranslation,
     nextDuel,
@@ -726,13 +727,42 @@ const GameBoard: React.FC = () => {
     <div className={styles.gameContainer}>
       <div className={styles.scoreBoard}>
         <div className={styles.playerScore}>
-          <p>Guybrush: {playerScore}</p>
+          Score: {playerScore}
         </div>
         <div className={styles.difficultyIndicator}>
-          <p>{difficulty === 'beginner' ? 'Principiante' : difficulty === 'intermediate' ? 'Intermedio' : 'Avanzado'}</p>
+          {difficulty.charAt(0).toUpperCase() + difficulty.slice(1)}
+        </div>
+        <div className={styles.healthBar}>
+          {[...Array(3)].map((_, i) => (
+            <div key={i} className={`${styles.heart} ${i < playerHealth ? styles.heartFull : styles.heartEmpty}`}>
+              <svg className={styles.heartSvg} viewBox="0 0 10 10">
+                <g className={styles.heartPixels}>
+                  <rect x="2" y="1" width="2" height="1" />
+                  <rect x="6" y="1" width="2" height="1" />
+                  <rect x="1" y="2" width="2" height="1" />
+                  <rect x="4" y="2" width="2" height="1" />
+                  <rect x="7" y="2" width="2" height="1" />
+                  <rect x="1" y="3" width="8" height="1" />
+                  <rect x="2" y="4" width="6" height="1" />
+                  <rect x="3" y="5" width="4" height="1" />
+                  <rect x="4" y="6" width="2" height="1" />
+                </g>
+              </svg>
+            </div>
+          ))}
         </div>
         <div className={styles.opponentScore}>
-          <p>LeChuck: {opponentScore}</p>
+          <button
+            onClick={toggleBackgroundMusic}
+            className={`${styles.iconButton} ${styles.muteButton}`}
+            aria-label={isMusicPlaying ? "Mute music" : "Play music"}
+          >
+            <img
+              src={isMusicPlaying ? "/images/sound.svg" : "/images/mute.svg"}
+              alt={isMusicPlaying ? "Sound on" : "Sound off"}
+            />
+          </button>
+          Score: {opponentScore}
         </div>
       </div>
 
@@ -807,9 +837,6 @@ const GameBoard: React.FC = () => {
             }
           }} className={styles.stopButton}>
             Repetir Insulto
-          </button>
-          <button onClick={toggleBackgroundMusic} className={styles.toggleButton}>
-            {isMusicPlaying ? "Silenciar Música" : "Reproducir Música"}
           </button>
           {isCacheLoading && (
             <span className={styles.loadingIndicator}>
