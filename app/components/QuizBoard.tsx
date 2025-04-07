@@ -7,6 +7,7 @@ import audioManifest from '../data/audioManifest.json';
 import * as quizImagesModule from '../data/quizImages';
 import { getQuizImage } from '../utils/imageUtils';
 import styles from '../styles/GameBoard.module.css';
+import RepeatIcon from './RepeatIcon';
 
 const QuizBoard: React.FC = () => {
   const {
@@ -337,25 +338,23 @@ const QuizBoard: React.FC = () => {
   // Function to play sword sound based on answer correctness
   const playSwordSound = (isCorrect: boolean) => {
     try {
-      // Use the sword fight sound for both hit and miss
-      const soundRef = isCorrect ? swordHitRef.current : swordMissRef.current;
-      const resultSound = isCorrect ? swordWinRef.current : swordDropRef.current;
+      // Get the appropriate sound paths
+      const soundPath = isCorrect ? '/audio/sword_fight.wav' : '/audio/sword_fight.wav';
+      const resultSoundPath = isCorrect ? '/audio/sword_win.wav' : '/audio/sword_drop.wav';
       
-      if (soundRef && resultSound) {
-        // Start the sword fight sound
-        soundRef.currentTime = 0;
-        
-        // Start playing the sword fight sound
-        soundRef.play().catch(err => {
-          console.error(`Failed to play sword sound:`, err);
-        });
-        
-        // Play the result sound immediately (it will mix with the sword fight sound)
-        resultSound.currentTime = 0;
-        resultSound.play().catch(err => {
-          console.error(`Failed to play result sound:`, err);
-        });
-      }
+      // Create new Audio objects each time to ensure they can be played multiple times
+      const soundRef = new Audio(soundPath);
+      const resultSound = new Audio(resultSoundPath);
+      
+      // Start playing the sword fight sound
+      soundRef.play().catch(err => {
+        console.error(`Failed to play sword sound:`, err);
+      });
+      
+      // Play the result sound immediately (it will mix with the sword fight sound)
+      resultSound.play().catch(err => {
+        console.error(`Failed to play result sound:`, err);
+      });
     } catch (error) {
       console.error('Error playing sword sound:', error);
     }
@@ -410,14 +409,14 @@ const QuizBoard: React.FC = () => {
 
   if (gameState === 'win') {
     return (
-      <div className={`${styles.resultContainer} ${styles.victoryAnimation}`}>
+      <div className={`${styles.introContainer} ${styles.victoryAnimation}`}>
         <h1>¡Excelente!</h1>
-        <div className={styles.victoryPirate}>
-          <div className={styles.victoryImage}></div>
+        <div className={styles.pirateShip}>
+          <div className={styles.shipImage}></div>
         </div>
         <p>Has superado la prueba de español con {correctQuizAnswers} respuestas correctas de {totalQuizQuestions}.</p>
         <button onClick={resetGame} className={styles.actionButton}>
-          Volver al Menú Principal
+          VOLVER AL MENÚ PRINCIPAL
         </button>
       </div>
     );
@@ -425,14 +424,14 @@ const QuizBoard: React.FC = () => {
 
   if (gameState === 'lose') {
     return (
-      <div className={`${styles.resultContainer} ${styles.defeatAnimation}`}>
+      <div className={`${styles.introContainer} ${styles.defeatAnimation}`}>
         <h1>Necesitas Practicar Más</h1>
-        <div className={styles.defeatPirate}>
-          <div className={styles.defeatImage}></div>
+        <div className={styles.pirateShip}>
+          <div className={styles.shipImage}></div>
         </div>
         <p>Solo obtuviste {correctQuizAnswers} respuestas correctas de {totalQuizQuestions}. ¡Sigue estudiando!</p>
         <button onClick={resetGame} className={styles.actionButton}>
-          Volver al Menú Principal
+          VOLVER AL MENÚ PRINCIPAL
         </button>
       </div>
     );
@@ -468,7 +467,7 @@ const QuizBoard: React.FC = () => {
       
       <div className={styles.scoreBoard}>
         <div className={styles.playerScore}>
-          Correct: {correctQuizAnswers}/{currentQuizQuestionIndex}
+          Correct: {correctQuizAnswers}/{totalQuizQuestions}
         </div>
         <div className={styles.difficultyIndicator}>
           Question {currentQuizQuestionIndex + 1}/{totalQuizQuestions}
@@ -585,24 +584,20 @@ const QuizBoard: React.FC = () => {
 
       <div className={styles.responseContainer}>
         <div className={styles.translationToggle}>
-          <button onClick={() => {
-            if (currentQuizQuestion) {
-              // Remove the current question from spoken texts so it can be spoken again
-              const updatedSpokenTexts = new Set(spokenTexts);
-              updatedSpokenTexts.delete(currentQuizQuestion.question);
-              setSpokenTexts(updatedSpokenTexts);
-              
-              // Speak the question again with LeChuck's voice
-              speakText(currentQuizQuestion.question, false);
-            }
-          }} className={styles.stopButton}>
-            Repetir Pregunta
-          </button>
-          {isSpeaking && voiceAudioRef.current && voiceAudioRef.current.duration > 0 && (
-            <span className={styles.loadingIndicator}>
-              {currentSpeaker === 'player' ? 'Guybrush (Pirata Extravagante)' : 'LeChuck'} hablando: {Math.round(audioProgress)}/{Math.round(audioDuration)}s
-            </span>
-          )}
+          <RepeatIcon 
+            onClick={() => {
+              if (currentQuizQuestion) {
+                // Remove the current question from spoken texts so it can be spoken again
+                const updatedSpokenTexts = new Set(spokenTexts);
+                updatedSpokenTexts.delete(currentQuizQuestion.question);
+                setSpokenTexts(updatedSpokenTexts);
+                
+                // Speak the question again with LeChuck's voice
+                speakText(currentQuizQuestion.question, false);
+              }
+            }} 
+            className={styles.repeatIcon}
+          />
         </div>
 
         <div className={styles.quizAnswers}>

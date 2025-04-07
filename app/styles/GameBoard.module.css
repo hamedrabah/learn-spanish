@@ -489,6 +489,24 @@
   background-color: #7a0712;
 }
 
+.repeatIcon {
+  background-color: #8b0000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.repeatIcon:hover {
+  background-color: #a52a2a;
+}
+
 .loadingIndicator {
   display: inline-block;
   margin-left: 10px;
@@ -810,13 +828,13 @@
 }
 
 .victoryAnimation {
-  background-color: #e8f4ff;
-  animation: victoryBg 2s ease-in-out infinite;
+  background: linear-gradient(to bottom, #0D47A1, #1976D2);
+  animation: none;
 }
 
 .defeatAnimation {
-  background-color: #ffebe8;
-  animation: defeatBg 2s ease-in-out infinite;
+  background: linear-gradient(to bottom, #7B1FA2, #9C27B0);
+  animation: none;
 }
 
 @keyframes victoryBg {
