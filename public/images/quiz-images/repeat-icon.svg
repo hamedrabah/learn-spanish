@@ -1,0 +1,58 @@
+<svg width="120" height="90" viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main sprite group centered in frame with increased scale -->
+  <g transform="translate(10, 5) scale(1.8)">
+    <!-- Pixelated Circular Sync Icon with clearer arrow design -->
+    
+    <!-- Circular path (blue) -->
+    <g id="circle-path">
+      <!-- Upper arc -->
+      <rect x="14" y="7" width="28" height="7" fill="#90CAF9" />
+      <rect x="7" y="14" width="42" height="7" fill="#90CAF9" />
+      <rect x="7" y="21" width="42" height="7" fill="#90CAF9" />
+      
+      <!-- Lower arc -->
+      <rect x="7" y="28" width="42" height="7" fill="#90CAF9" />
+      <rect x="7" y="35" width="42" height="7" fill="#90CAF9" />
+      <rect x="14" y="42" width="28" height="7" fill="#90CAF9" />
+    </g>
+    
+    <!-- Circle outline (black) -->
+    <g id="circle-outline">
+      <!-- Upper outline -->
+      <rect x="14" y="0" width="28" height="7" fill="#000000" />
+      <rect x="7" y="7" width="7" height="7" fill="#000000" />
+      <rect x="42" y="7" width="7" height="7" fill="#000000" />
+      <rect x="0" y="14" width="7" height="14" fill="#000000" />
+      <rect x="49" y="14" width="7" height="14" fill="#000000" />
+      
+      <!-- Lower outline -->
+      <rect x="0" y="28" width="7" height="14" fill="#000000" />
+      <rect x="49" y="28" width="7" height="14" fill="#000000" />
+      <rect x="7" y="42" width="7" height="7" fill="#000000" />
+      <rect x="42" y="42" width="7" height="7" fill="#000000" />
+      <rect x="14" y="49" width="28" height="7" fill="#000000" />
+    </g>
+    
+    <!-- Upper-right arrow (clockwise) -->
+    <g id="upper-arrow">
+      <!-- Arrow head (black outline) -->
+      <rect x="49" y="21" width="7" height="7" fill="#000000" />
+      <rect x="56" y="14" width="7" height="7" fill="#000000" />
+      <rect x="49" y="7" width="7" height="7" fill="#000000" />
+      
+      <!-- Arrow head (blue fill) -->
+      <rect x="49" y="14" width="7" height="7" fill="#90CAF9" />
+    </g>
+    
+    <!-- Lower-left arrow (counterclockwise) -->
+    <g id="lower-arrow">
+      <!-- Arrow head (black outline) -->
+      <rect x="0" y="28" width="7" height="7" fill="#000000" />
+      <rect x="-7" y="35" width="7" height="7" fill="#000000" />
+      <rect x="0" y="42" width="7" height="7" fill="#000000" />
+      
+      <!-- Arrow head (blue fill) -->
+      <rect x="0" y="35" width="7" height="7" fill="#90CAF9" />
+    </g>
+  </g>
+</svg> 

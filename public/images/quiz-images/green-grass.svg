@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="60" viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- 16-bit style green grass (hierba verde) -->
+  
+  <!-- Sky background -->
+  <rect width="120" height="30" fill="#87CEEB"/>
+  
+  <!-- Ground base -->
+  <rect y="30" width="120" height="30" fill="#4CAF50"/>
+  
+  <!-- Multiple grass blades - front row (darker) -->
+  <g fill="#2E7D32">
+    <!-- Grass blade clusters -->
+    <path d="M5,30 L2,20 L5,25 L8,15 L10,25 L15,18 L16,25 L20,30 Z"/>
+    <path d="M25,30 L22,17 L25,23 L28,15 L30,22 L35,16 L36,25 L40,30 Z"/>
+    <path d="M45,30 L42,19 L45,25 L48,14 L50,22 L55,16 L56,25 L60,30 Z"/>
+    <path d="M65,30 L62,18 L65,24 L68,12 L70,25 L75,15 L76,25 L80,30 Z"/>
+    <path d="M85,30 L82,17 L85,23 L88,13 L90,22 L95,16 L96,25 L100,30 Z"/>
+    <path d="M105,30 L102,19 L105,25 L108,15 L110,22 L115,17 L116,25 L120,30 Z"/>
+  </g>
+  
+  <!-- Middle row grass (medium green) -->
+  <g fill="#388E3C">
+    <!-- Grass blade clusters -->
+    <path d="M10,30 L7,22 L10,26 L12,19 L15,24 L18,20 L20,27 L25,30 Z"/>
+    <path d="M30,30 L27,21 L30,25 L33,18 L36,23 L39,19 L41,26 L45,30 Z"/>
+    <path d="M50,30 L47,23 L50,27 L53,20 L56,25 L59,18 L61,25 L65,30 Z"/>
+    <path d="M70,30 L67,22 L70,26 L73,17 L76,24 L79,19 L81,27 L85,30 Z"/>
+    <path d="M90,30 L87,23 L90,27 L93,19 L96,25 L99,18 L101,26 L105,30 Z"/>
+  </g>
+  
+  <!-- Back row grass (lighter green) -->
+  <g fill="#4CAF50">
+    <!-- Grass blade clusters -->
+    <path d="M15,30 L13,24 L16,27 L18,22 L20,26 L22,21 L24,28 L28,30 Z"/>
+    <path d="M35,30 L33,25 L36,28 L38,23 L40,27 L42,21 L44,28 L47,30 Z"/>
+    <path d="M55,30 L53,26 L56,28 L58,24 L60,27 L62,22 L64,28 L67,30 Z"/>
+    <path d="M75,30 L73,25 L76,28 L78,23 L80,27 L82,22 L84,28 L87,30 Z"/>
+    <path d="M95,30 L93,24 L96,27 L98,22 L100,26 L102,21 L104,28 L108,30 Z"/>
+  </g>
+  
+  <!-- Individual detailed grass blades sprinkled throughout -->
+  <g stroke="#1B5E20" stroke-width="0.5" fill="none">
+    <path d="M8,30 C8,25 7,20 5,15"/>
+    <path d="M18,30 C18,27 19,22 22,18"/>
+    <path d="M28,30 C28,26 26,21 23,17"/>
+    <path d="M38,30 C38,25 40,20 43,15"/>
+    <path d="M48,30 C48,27 46,22 43,18"/>
+    <path d="M58,30 C58,25 60,20 63,16"/>
+    <path d="M68,30 C68,26 66,21 63,17"/>
+    <path d="M78,30 C78,25 80,20 83,15"/>
+    <path d="M88,30 C88,27 86,22 83,18"/>
+    <path d="M98,30 C98,25 100,20 103,16"/>
+    <path d="M108,30 C108,26 106,21 103,17"/>
+    <path d="M118,30 C118,25 116,20 113,15"/>
+  </g>
+  
+  <!-- Grass texture details -->
+  <g stroke="#4CAF50" stroke-width="0.2" opacity="0.5">
+    <line x1="5" y1="35" x2="15" y2="35"/>
+    <line x1="25" y1="35" x2="35" y2="35"/>
+    <line x1="45" y1="35" x2="55" y2="35"/>
+    <line x1="65" y1="35" x2="75" y2="35"/>
+    <line x1="85" y1="35" x2="95" y2="35"/>
+    <line x1="105" y1="35" x2="115" y2="35"/>
+    
+    <line x1="10" y1="40" x2="20" y2="40"/>
+    <line x1="30" y1="40" x2="40" y2="40"/>
+    <line x1="50" y1="40" x2="60" y2="40"/>
+    <line x1="70" y1="40" x2="80" y2="40"/>
+    <line x1="90" y1="40" x2="100" y2="40"/>
+    
+    <line x1="15" y1="45" x2="25" y2="45"/>
+    <line x1="35" y1="45" x2="45" y2="45"/>
+    <line x1="55" y1="45" x2="65" y2="45"/>
+    <line x1="75" y1="45" x2="85" y2="45"/>
+    <line x1="95" y1="45" x2="105" y2="45"/>
+  </g>
+  
+  <!-- Tiny flowers scattered in the grass -->
+  <g>
+    <!-- White flowers -->
+    <circle cx="22" cy="28" r="1.2" fill="#FFFFFF"/>
+    <circle cx="65" cy="27" r="1.2" fill="#FFFFFF"/>
+    <circle cx="112" cy="29" r="1.2" fill="#FFFFFF"/>
+    <!-- Yellow center of flowers -->
+    <circle cx="22" cy="28" r="0.4" fill="#FFEB3B"/>
+    <circle cx="65" cy="27" r="0.4" fill="#FFEB3B"/>
+    <circle cx="112" cy="29" r="0.4" fill="#FFEB3B"/>
+  </g>
+  
+  <!-- A few bugs/insects in the grass for detail -->
+  <g>
+    <circle cx="40" cy="32" r="0.8" fill="#795548"/>
+    <line x1="39" y1="31" x2="38" y2="30" stroke="#795548" stroke-width="0.3"/>
+    <line x1="41" y1="31" x2="42" y2="30" stroke="#795548" stroke-width="0.3"/>
+    
+    <circle cx="85" cy="33" r="0.8" fill="#795548"/>
+    <line x1="84" y1="32" x2="83" y2="31" stroke="#795548" stroke-width="0.3"/>
+    <line x1="86" y1="32" x2="87" y2="31" stroke="#795548" stroke-width="0.3"/>
+  </g>
+  
+  <!-- Dirt patches showing through -->
+  <path d="M10,50 C12,48 15,48 18,50 C20,52 25,52 28,50 C30,48 35,49 38,52 C40,54 45,54 48,52" fill="#795548" opacity="0.1"/>
+  <path d="M70,55 C72,53 75,53 78,55 C80,57 85,57 88,55 C90,53 95,54 98,57 C100,59 105,59 108,57" fill="#795548" opacity="0.1"/>
+  
+  <!-- Subtle shadow/gradient at bottom -->
+  <rect y="50" width="120" height="10" fill="#1B5E20" opacity="0.1"/>
+</svg> 

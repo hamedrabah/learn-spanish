@@ -1,0 +1,138 @@
+<svg width="120" height="90" viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main sprite group centered in frame -->
+  <g transform="translate(25, 5)">
+    <!-- 16-bit Pixel Art Mute Icon - Larger size (with red slash) -->
+    
+    <!-- Speaker base -->
+    <g id="speaker-base">
+      <!-- Row 1 -->
+      <rect x="5" y="20" width="7" height="7" fill="#333333" />
+      <rect x="12" y="20" width="7" height="7" fill="#333333" />
+      
+      <!-- Row 2 -->
+      <rect x="0" y="27" width="7" height="7" fill="#333333" />
+      <rect x="7" y="27" width="7" height="7" fill="#444444" />
+      <rect x="14" y="27" width="7" height="7" fill="#444444" />
+      <rect x="21" y="27" width="7" height="7" fill="#333333" />
+      
+      <!-- Row 3 -->
+      <rect x="0" y="34" width="7" height="7" fill="#333333" />
+      <rect x="7" y="34" width="7" height="7" fill="#444444" />
+      <rect x="14" y="34" width="7" height="7" fill="#444444" />
+      <rect x="21" y="34" width="7" height="7" fill="#333333" />
+      
+      <!-- Row 4 -->
+      <rect x="0" y="41" width="7" height="7" fill="#333333" />
+      <rect x="7" y="41" width="7" height="7" fill="#444444" />
+      <rect x="14" y="41" width="7" height="7" fill="#444444" />
+      <rect x="21" y="41" width="7" height="7" fill="#333333" />
+      
+      <!-- Row 5 -->
+      <rect x="0" y="48" width="7" height="7" fill="#333333" />
+      <rect x="7" y="48" width="7" height="7" fill="#444444" />
+      <rect x="14" y="48" width="7" height="7" fill="#444444" />
+      <rect x="21" y="48" width="7" height="7" fill="#333333" />
+      
+      <!-- Row 6 -->
+      <rect x="5" y="55" width="7" height="7" fill="#333333" />
+      <rect x="12" y="55" width="7" height="7" fill="#333333" />
+    </g>
+    
+    <!-- Sound cone -->
+    <g id="sound-cone">
+      <!-- Row 1 -->
+      <rect x="28" y="13" width="7" height="7" fill="#333333" />
+      
+      <!-- Row 2 -->
+      <rect x="21" y="20" width="7" height="7" fill="#333333" />
+      <rect x="28" y="20" width="7" height="7" fill="#444444" />
+      <rect x="35" y="20" width="7" height="7" fill="#333333" />
+      
+      <!-- Row 3 -->
+      <rect x="28" y="27" width="7" height="7" fill="#444444" />
+      <rect x="35" y="27" width="7" height="7" fill="#333333" />
+      <rect x="42" y="27" width="7" height="7" fill="#333333" />
+      
+      <!-- Row 4 -->
+      <rect x="28" y="34" width="7" height="7" fill="#444444" />
+      <rect x="35" y="34" width="7" height="7" fill="#444444" />
+      <rect x="42" y="34" width="7" height="7" fill="#333333" />
+      <rect x="49" y="34" width="7" height="7" fill="#333333" />
+      
+      <!-- Row 5 -->
+      <rect x="28" y="41" width="7" height="7" fill="#444444" />
+      <rect x="35" y="41" width="7" height="7" fill="#444444" />
+      <rect x="42" y="41" width="7" height="7" fill="#333333" />
+      <rect x="49" y="41" width="7" height="7" fill="#333333" />
+      
+      <!-- Row 6 -->
+      <rect x="28" y="48" width="7" height="7" fill="#444444" />
+      <rect x="35" y="48" width="7" height="7" fill="#333333" />
+      <rect x="42" y="48" width="7" height="7" fill="#333333" />
+      
+      <!-- Row 7 -->
+      <rect x="21" y="55" width="7" height="7" fill="#333333" />
+      <rect x="28" y="55" width="7" height="7" fill="#444444" />
+      <rect x="35" y="55" width="7" height="7" fill="#333333" />
+      
+      <!-- Row 8 -->
+      <rect x="28" y="62" width="7" height="7" fill="#333333" />
+    </g>
+    
+    <!-- Sound waves - Blue pixels -->
+    <g id="sound-waves">
+      <!-- Wave 1 (closest to speaker) -->
+      <rect x="49" y="27" width="7" height="7" fill="#4A90E2" />
+      <rect x="49" y="34" width="7" height="7" fill="#4A90E2" />
+      <rect x="49" y="41" width="7" height="7" fill="#4A90E2" />
+      <rect x="49" y="48" width="7" height="7" fill="#4A90E2" />
+      
+      <!-- Wave 2 (middle) -->
+      <rect x="63" y="20" width="7" height="7" fill="#4A90E2" />
+      <rect x="63" y="27" width="7" height="7" fill="#4A90E2" />
+      <rect x="63" y="34" width="7" height="7" fill="#4A90E2" />
+      <rect x="63" y="41" width="7" height="7" fill="#4A90E2" />
+      <rect x="63" y="48" width="7" height="7" fill="#4A90E2" />
+      <rect x="63" y="55" width="7" height="7" fill="#4A90E2" />
+    </g>
+    
+    <!-- Red prohibition slash - Bold red diagonal slash -->
+    <g id="prohibition-slash">
+      <!-- Row 1 -->
+      <rect x="7" y="6" width="7" height="7" fill="#FF3333" />
+      <rect x="14" y="6" width="7" height="7" fill="#FF3333" />
+      
+      <!-- Row 2 -->
+      <rect x="21" y="13" width="7" height="7" fill="#FF3333" />
+      <rect x="28" y="13" width="7" height="7" fill="#FF3333" />
+      
+      <!-- Row 3 -->
+      <rect x="35" y="20" width="7" height="7" fill="#FF3333" />
+      <rect x="42" y="20" width="7" height="7" fill="#FF3333" />
+      
+      <!-- Row 4 -->
+      <rect x="49" y="27" width="7" height="7" fill="#FF3333" />
+      <rect x="56" y="27" width="7" height="7" fill="#FF3333" />
+      
+      <!-- Row 5 -->
+      <rect x="63" y="34" width="7" height="7" fill="#FF3333" />
+      <rect x="70" y="34" width="7" height="7" fill="#FF3333" />
+      
+      <!-- Row 6 -->
+      <rect x="70" y="41" width="7" height="7" fill="#FF3333" />
+      <rect x="77" y="41" width="7" height="7" fill="#FF3333" />
+      
+      <!-- Row 7 -->
+      <rect x="77" y="48" width="7" height="7" fill="#FF3333" />
+      <rect x="84" y="48" width="7" height="7" fill="#FF3333" />
+      
+      <!-- Row 8 -->
+      <rect x="84" y="55" width="7" height="7" fill="#FF3333" />
+      <rect x="91" y="55" width="7" height="7" fill="#FF3333" />
+      
+      <!-- Row 9 -->
+      <rect x="91" y="62" width="7" height="7" fill="#FF3333" />
+      <rect x="98" y="62" width="7" height="7" fill="#FF3333" />
+    </g>
+  </g>
+</svg> 

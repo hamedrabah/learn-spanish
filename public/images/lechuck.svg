@@ -1,0 +1,45 @@
+<svg width="120" height="180" viewBox="0 0 16 24" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+  <!-- LeChuck in 16-pixel art style -->
+  
+  <!-- Hat (pirate hat) -->
+  <rect x="3" y="1" width="10" height="2" fill="#330000" />
+  <rect x="4" y="0" width="8" height="1" fill="#550000" />
+  
+  <!-- Face (pale/ghostly) -->
+  <rect x="5" y="3" width="6" height="3" fill="#99aacc" />
+  <rect x="6" y="6" width="4" height="1" fill="#99aacc" />
+  
+  <!-- Eyes (glowing red) -->
+  <rect x="6" y="4" width="1" height="1" fill="#ff0000" />
+  <rect x="9" y="4" width="1" height="1" fill="#ff0000" />
+  
+  <!-- Beard (dark) -->
+  <rect x="4" y="5" width="8" height="5" fill="#222233" />
+  <rect x="5" y="10" width="6" height="1" fill="#222233" />
+  
+  <!-- Mouth -->
+  <rect x="7" y="6" width="2" height="1" fill="#660000" />
+  
+  <!-- Coat (striped pirate) -->
+  <rect x="5" y="7" width="6" height="8" fill="#772233" />
+  <rect x="3" y="8" width="2" height="5" fill="#772233" /> <!-- left arm -->
+  <rect x="11" y="8" width="2" height="5" fill="#772233" /> <!-- right arm -->
+  
+  <!-- Coat details (stripes) -->
+  <rect x="5" y="9" width="6" height="1" fill="#994455" />
+  <rect x="5" y="11" width="6" height="1" fill="#994455" />
+  <rect x="5" y="13" width="6" height="1" fill="#994455" />
+  
+  <!-- Hands -->
+  <rect x="2" y="10" width="1" height="3" fill="#778899" />
+  <rect x="13" y="10" width="1" height="3" fill="#778899" />
+  
+  <!-- Pants (dark) -->
+  <rect x="5" y="15" width="6" height="4" fill="#333344" />
+  <rect x="5" y="19" width="2" height="3" fill="#333344" /> <!-- left leg -->
+  <rect x="9" y="19" width="2" height="3" fill="#333344" /> <!-- right leg -->
+  
+  <!-- Shoes (black) -->
+  <rect x="4" y="22" width="3" height="1" fill="#222222" />
+  <rect x="9" y="22" width="3" height="1" fill="#222222" />
+</svg> 

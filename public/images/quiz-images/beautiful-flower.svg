@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="120" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- 16-bit style beautiful flower -->
+  
+  <!-- Stem -->
+  <rect x="48" y="40" width="4" height="70" fill="#2e8b57"/>
+  
+  <!-- Leaf left -->
+  <path d="M 48,80 Q 20,70 48,60" fill="#3cb371" stroke="#2e8b57" stroke-width="1"/>
+  
+  <!-- Leaf right -->
+  <path d="M 52,70 Q 80,60 52,50" fill="#3cb371" stroke="#2e8b57" stroke-width="1"/>
+  
+  <!-- Petals -->
+  <!-- Top -->
+  <path d="M 50,30 Q 40,5 50,15 Q 60,5 50,30" fill="#ff69b4" stroke="#ff1493" stroke-width="1"/>
+  <!-- Top-right -->
+  <path d="M 60,35 Q 75,15 55,25 Q 70,10 60,35" fill="#ff69b4" stroke="#ff1493" stroke-width="1"/>
+  <!-- Right -->
+  <path d="M 65,45 Q 90,40 65,35 Q 90,30 65,45" fill="#ff69b4" stroke="#ff1493" stroke-width="1"/>
+  <!-- Bottom-right -->
+  <path d="M 60,55 Q 80,70 55,50 Q 75,65 60,55" fill="#ff69b4" stroke="#ff1493" stroke-width="1"/>
+  <!-- Bottom -->
+  <path d="M 50,60 Q 40,85 50,50 Q 60,85 50,60" fill="#ff69b4" stroke="#ff1493" stroke-width="1"/>
+  <!-- Bottom-left -->
+  <path d="M 40,55 Q 20,70 45,50 Q 25,65 40,55" fill="#ff69b4" stroke="#ff1493" stroke-width="1"/>
+  <!-- Left -->
+  <path d="M 35,45 Q 10,40 35,35 Q 10,30 35,45" fill="#ff69b4" stroke="#ff1493" stroke-width="1"/>
+  <!-- Top-left -->
+  <path d="M 40,35 Q 25,15 45,25 Q 30,10 40,35" fill="#ff69b4" stroke="#ff1493" stroke-width="1"/>
+  
+  <!-- Center -->
+  <circle cx="50" cy="45" r="15" fill="#ffff00" stroke="#ffd700" stroke-width="1"/>
+  
+  <!-- Center details -->
+  <circle cx="50" cy="45" r="10" fill="#ffa500"/>
+  <circle cx="50" cy="45" r="5" fill="#ff8c00"/>
+  
+  <!-- Sparkles to make it look beautiful -->
+  <polygon points="25,20 28,22 28,18" fill="#ffffff"/>
+  <polygon points="75,20 72,22 72,18" fill="#ffffff"/>
+  <polygon points="85,45 82,48 82,42" fill="#ffffff"/>
+  <polygon points="15,45 18,48 18,42" fill="#ffffff"/>
+  <polygon points="30,75 33,78 33,72" fill="#ffffff"/>
+  <polygon points="70,75 67,78 67,72" fill="#ffffff"/>
+</svg> 

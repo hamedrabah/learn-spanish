@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="100" viewBox="0 0 120 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- 16-bit style big cat -->
+  <!-- Body -->
+  <rect x="25" y="45" width="70" height="40" rx="20" fill="#a56b29"/>
+  
+  <!-- Head -->
+  <rect x="15" y="25" width="45" height="40" rx="15" fill="#a56b29"/>
+  
+  <!-- Ears -->
+  <polygon points="25,25 15,15 25,15" fill="#a56b29"/>
+  <polygon points="50,25 60,15 50,15" fill="#a56b29"/>
+  <polygon points="25,25 18,18 25,18" fill="#ffccaa"/>
+  <polygon points="50,25 57,18 50,18" fill="#ffccaa"/>
+  
+  <!-- Eyes -->
+  <rect x="25" y="35" width="8" height="8" rx="4" fill="#000000"/>
+  <rect x="42" y="35" width="8" height="8" rx="4" fill="#000000"/>
+  <rect x="27" y="37" width="3" height="3" rx="1.5" fill="#ffffff"/>
+  <rect x="44" y="37" width="3" height="3" rx="1.5" fill="#ffffff"/>
+  
+  <!-- Nose -->
+  <rect x="33" y="45" width="9" height="6" rx="3" fill="#ff9999"/>
+  
+  <!-- Mouth -->
+  <line x1="37.5" y1="51" x2="37.5" y2="55" stroke="#000000" stroke-width="1"/>
+  <path d="M 33,55 Q 37.5,59 42,55" stroke="#000000" stroke-width="1" fill="none"/>
+  
+  <!-- Whiskers -->
+  <line x1="33" y1="48" x2="20" y2="44" stroke="#000000" stroke-width="1"/>
+  <line x1="33" y1="48" x2="20" y2="48" stroke="#000000" stroke-width="1"/>
+  <line x1="33" y1="48" x2="20" y2="52" stroke="#000000" stroke-width="1"/>
+  <line x1="42" y1="48" x2="55" y2="44" stroke="#000000" stroke-width="1"/>
+  <line x1="42" y1="48" x2="55" y2="48" stroke="#000000" stroke-width="1"/>
+  <line x1="42" y1="48" x2="55" y2="52" stroke="#000000" stroke-width="1"/>
+  
+  <!-- Legs -->
+  <rect x="30" y="85" width="10" height="15" fill="#a56b29"/>
+  <rect x="80" y="85" width="10" height="15" fill="#a56b29"/>
+  <rect x="45" y="85" width="10" height="15" fill="#a56b29"/>
+  <rect x="65" y="85" width="10" height="15" fill="#a56b29"/>
+  
+  <!-- Tail -->
+  <path d="M 95,60 Q 105,50 115,60" stroke="#a56b29" stroke-width="12" fill="none" stroke-linecap="round"/>
+  
+  <!-- Stripes/spots to make it look bigger -->
+  <rect x="35" y="55" width="50" height="5" fill="#8b5622"/>
+  <rect x="35" y="65" width="45" height="5" fill="#8b5622"/>
+  <rect x="40" y="75" width="40" height="5" fill="#8b5622"/>
+</svg> 

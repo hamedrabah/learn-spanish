@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="80" viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- 16-bit style blue sky (cielo azul) -->
+  
+  <!-- Sky gradient from lighter blue at top to deeper blue at horizon -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#64B5F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1976D2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background sky -->
+  <rect width="120" height="80" fill="url(#skyGradient)"/>
+  
+  <!-- Sun with glow -->
+  <circle cx="20" cy="20" r="12" fill="#FFEB3B" stroke="#FFC107" stroke-width="1"/>
+  <circle cx="20" cy="20" r="16" fill="#FFEB3B" opacity="0.2"/>
+  
+  <!-- Sun rays -->
+  <line x1="20" y1="0" x2="20" y2="4" stroke="#FFC107" stroke-width="1"/>
+  <line x1="20" y1="36" x2="20" y2="40" stroke="#FFC107" stroke-width="1"/>
+  <line x1="0" y1="20" x2="4" y2="20" stroke="#FFC107" stroke-width="1"/>
+  <line x1="36" y1="20" x2="40" y2="20" stroke="#FFC107" stroke-width="1"/>
+  <line x1="6" y1="6" x2="10" y2="10" stroke="#FFC107" stroke-width="1"/>
+  <line x1="30" y1="30" x2="34" y2="34" stroke="#FFC107" stroke-width="1"/>
+  <line x1="6" y1="34" x2="10" y2="30" stroke="#FFC107" stroke-width="1"/>
+  <line x1="30" y1="10" x2="34" y2="6" stroke="#FFC107" stroke-width="1"/>
+  
+  <!-- Clouds -->
+  <!-- Cloud 1 - Left -->
+  <circle cx="35" cy="15" r="5" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="0.5"/>
+  <circle cx="42" cy="15" r="7" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="0.5"/>
+  <circle cx="50" cy="15" r="5" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="0.5"/>
+  <rect x="35" y="13" width="20" height="6" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="0.5"/>
+  
+  <!-- Cloud 2 - Right upper -->
+  <circle cx="80" cy="10" r="4" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="0.5"/>
+  <circle cx="86" cy="10" r="6" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="0.5"/>
+  <circle cx="93" cy="10" r="4" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="0.5"/>
+  <rect x="80" y="8" width="17" height="5" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="0.5"/>
+  
+  <!-- Cloud 3 - Right lower -->
+  <circle cx="100" cy="35" r="6" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="0.5"/>
+  <circle cx="110" cy="35" r="9" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="0.5"/>
+  <circle cx="120" cy="35" r="6" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="0.5"/>
+  <rect x="100" y="32" width="25" height="8" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="0.5"/>
+  
+  <!-- Small flying bird silhouettes -->
+  <path d="M 60,30 L 65,25 L 70,30 L 75,25 L 80,30" fill="none" stroke="#424242" stroke-width="1"/>
+  <path d="M 85,20 L 90,15 L 95,20 L 100,15 L 105,20" fill="none" stroke="#424242" stroke-width="1"/>
+  
+  <!-- Distant mountain silhouette -->
+  <path d="M 0,70 L 20,50 L 40,65 L 60,40 L 80,60 L 100,35 L 120,70 Z" fill="#1565C0" stroke="none" opacity="0.3"/>
+  
+  <!-- Pixel-style shine effects in the sky -->
+  <rect x="50" y="5" width="2" height="2" fill="#FFFFFF" opacity="0.5"/>
+  <rect x="65" y="10" width="2" height="2" fill="#FFFFFF" opacity="0.5"/>
+  <rect x="75" y="25" width="2" height="2" fill="#FFFFFF" opacity="0.5"/>
+  <rect x="90" y="40" width="2" height="2" fill="#FFFFFF" opacity="0.5"/>
+  <rect x="40" y="35" width="2" height="2" fill="#FFFFFF" opacity="0.5"/>
+  <rect x="25" y="45" width="2" height="2" fill="#FFFFFF" opacity="0.5"/>
+  <rect x="110" y="15" width="2" height="2" fill="#FFFFFF" opacity="0.5"/>
+</svg> 

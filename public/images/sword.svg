@@ -1,0 +1,18 @@
+<svg width="40" height="16" viewBox="0 0 10 4" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+  <!-- Pixel art sword -->
+  
+  <!-- Handle -->
+  <rect x="0" y="1" width="2" height="2" fill="#aa7722" />
+  
+  <!-- Guard -->
+  <rect x="2" y="0" width="1" height="4" fill="#ffcc55" />
+  
+  <!-- Blade -->
+  <rect x="3" y="1" width="5" height="2" fill="#ccddee" />
+  <rect x="8" y="1" width="1" height="2" fill="#aabbcc" />
+  <rect x="9" y="1" width="1" height="2" fill="#99aabb" />
+  
+  <!-- Blade detail -->
+  <rect x="4" y="2" width="1" height="1" fill="#aabbcc" />
+  <rect x="6" y="1" width="1" height="1" fill="#aabbcc" />
+</svg> 

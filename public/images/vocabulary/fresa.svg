@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="90" height="90" viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg">
+  <!-- 16-bit style strawberry (fresa) -->
+  
+  <!-- Stem -->
+  <rect x="43" y="10" width="4" height="8" fill="#2e8b57"/>
+  
+  <!-- Leaves -->
+  <polygon points="45,10 55,5 58,15 45,15" fill="#32cd32" stroke="#228b22" stroke-width="1"/>
+  <polygon points="45,10 35,5 32,15 45,15" fill="#32cd32" stroke="#228b22" stroke-width="1"/>
+  <polygon points="45,10 45,0 55,5" fill="#32cd32" stroke="#228b22" stroke-width="1"/>
+  
+  <!-- Strawberry body -->
+  <path d="M 30,25 Q 30,75 45,85 Q 60,75 60,25 Z" fill="#e60000" stroke="#cc0000" stroke-width="2"/>
+  
+  <!-- Strawberry top -->
+  <path d="M 30,25 Q 45,15 60,25" fill="#e60000" stroke="#cc0000" stroke-width="2"/>
+  
+  <!-- Seeds (yellow dots) -->
+  <circle cx="35" cy="30" r="2" fill="#ffff00"/>
+  <circle cx="55" cy="30" r="2" fill="#ffff00"/>
+  <circle cx="40" cy="35" r="2" fill="#ffff00"/>
+  <circle cx="50" cy="35" r="2" fill="#ffff00"/>
+  <circle cx="32" cy="40" r="2" fill="#ffff00"/>
+  <circle cx="45" cy="40" r="2" fill="#ffff00"/>
+  <circle cx="58" cy="40" r="2" fill="#ffff00"/>
+  <circle cx="35" cy="45" r="2" fill="#ffff00"/>
+  <circle cx="50" cy="45" r="2" fill="#ffff00"/>
+  <circle cx="40" cy="50" r="2" fill="#ffff00"/>
+  <circle cx="55" cy="50" r="2" fill="#ffff00"/>
+  <circle cx="32" cy="55" r="2" fill="#ffff00"/>
+  <circle cx="45" cy="55" r="2" fill="#ffff00"/>
+  <circle cx="58" cy="55" r="2" fill="#ffff00"/>
+  <circle cx="38" cy="60" r="2" fill="#ffff00"/>
+  <circle cx="52" cy="60" r="2" fill="#ffff00"/>
+  <circle cx="35" cy="65" r="2" fill="#ffff00"/>
+  <circle cx="45" cy="65" r="2" fill="#ffff00"/>
+  <circle cx="55" cy="65" r="2" fill="#ffff00"/>
+  <circle cx="40" cy="70" r="2" fill="#ffff00"/>
+  <circle cx="50" cy="70" r="2" fill="#ffff00"/>
+  <circle cx="45" cy="75" r="2" fill="#ffff00"/>
+  
+  <!-- Highlight -->
+  <ellipse cx="40" cy="40" rx="5" ry="10" fill="#ff3333" opacity="0.5"/>
+</svg> 

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="90" viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg">
+  <!-- Transparent background -->
+  <rect width="120" height="90" fill="none"/>
+  
+  <!-- Main teacher sprite - 16-bit pixel art style -->
+  <g transform="translate(30, 5)">
+    <!-- Chalkboard - pixel art style -->
+    <rect x="0" y="0" width="60" height="30" fill="#2E7D32"/>
+    <rect x="2" y="2" width="56" height="26" fill="#388E3C"/>
+    
+    <!-- Chalkboard frame - pixel blocks -->
+    <rect x="-2" y="-2" width="64" height="2" fill="#795548"/>
+    <rect x="-2" y="30" width="64" height="2" fill="#795548"/>
+    <rect x="-2" y="-2" width="2" height="34" fill="#795548"/>
+    <rect x="60" y="-2" width="2" height="34" fill="#795548"/>
+    
+    <!-- Math equation pixels - no text, just pixel symbols -->
+    <rect x="10" y="8" width="6" height="2" fill="#FFFFFF"/>
+    <rect x="20" y="8" width="6" height="2" fill="#FFFFFF"/>
+    <rect x="10" y="14" width="16" height="2" fill="#FFFFFF"/>
+    
+    <!-- Happy face on board - pixel art -->
+    <rect x="38" y="10" width="14" height="14" fill="none"/>
+    <rect x="38" y="10" width="2" height="2" fill="#FFFFFF"/>
+    <rect x="40" y="8" width="10" height="2" fill="#FFFFFF"/>
+    <rect x="50" y="10" width="2" height="2" fill="#FFFFFF"/>
+    <rect x="38" y="12" width="2" height="10" fill="#FFFFFF"/>
+    <rect x="50" y="12" width="2" height="10" fill="#FFFFFF"/>
+    <rect x="40" y="22" width="10" height="2" fill="#FFFFFF"/>
+    <rect x="42" y="14" width="2" height="2" fill="#FFFFFF"/>
+    <rect x="46" y="14" width="2" height="2" fill="#FFFFFF"/>
+    <rect x="42" y="18" width="6" height="2" fill="#FFFFFF"/>
+    
+    <!-- Teacher's head - pixel blocks -->
+    <rect x="24" y="36" width="12" height="12" fill="#FFCCBC"/>
+    
+    <!-- Teacher's hair - pixel blocks -->
+    <rect x="22" y="32" width="16" height="6" fill="#5D4037"/>
+    <rect x="20" y="34" width="4" height="6" fill="#5D4037"/>
+    <rect x="36" y="34" width="4" height="6" fill="#5D4037"/>
+    
+    <!-- Teacher's eyes - pixel dots -->
+    <rect x="26" y="40" width="2" height="2" fill="#000000"/>
+    <rect x="32" y="40" width="2" height="2" fill="#000000"/>
+    
+    <!-- Teacher's glasses - pixel frames -->
+    <rect x="24" y="38" width="6" height="2" fill="none" stroke="#9E9E9E" stroke-width="1"/>
+    <rect x="30" y="38" width="6" height="2" fill="none" stroke="#9E9E9E" stroke-width="1"/>
+    <rect x="29" y="39" width="2" height="1" fill="#9E9E9E"/>
+    
+    <!-- Teacher's smile - pixel line (emphasized for "simpático") -->
+    <rect x="27" y="44" width="6" height="2" fill="#000000"/>
+    <rect x="26" y="43" width="1" height="1" fill="#000000"/>
+    <rect x="33" y="43" width="1" height="1" fill="#000000"/>
+    
+    <!-- Teacher's body - pixel blocks -->
+    <rect x="22" y="48" width="16" height="20" fill="#2196F3"/>
+    
+    <!-- Teacher's tie - pixel blocks -->
+    <rect x="28" y="48" width="4" height="2" fill="#F44336"/>
+    <rect x="29" y="50" width="2" height="8" fill="#F44336"/>
+    <rect x="27" y="58" width="6" height="2" fill="#F44336"/>
+    
+    <!-- Teacher's arms - pixel blocks (welcoming position) -->
+    <rect x="14" y="50" width="8" height="4" fill="#FFCCBC"/>
+    <rect x="38" y="50" width="8" height="4" fill="#FFCCBC"/>
+    <rect x="10" y="54" width="4" height="4" fill="#FFCCBC"/>
+    <rect x="46" y="54" width="4" height="4" fill="#FFCCBC"/>
+    
+    <!-- Teacher's legs - pixel blocks -->
+    <rect x="24" y="68" width="4" height="12" fill="#3F51B5"/>
+    <rect x="32" y="68" width="4" height="12" fill="#3F51B5"/>
+    
+    <!-- Teacher's shoes - pixel blocks -->
+    <rect x="22" y="80" width="6" height="4" fill="#5D4037"/>
+    <rect x="32" y="80" width="6" height="4" fill="#5D4037"/>
+  </g>
+</svg> 

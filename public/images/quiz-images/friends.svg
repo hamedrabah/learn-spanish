@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="100" viewBox="0 0 120 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Transparent background -->
+  <rect width="120" height="100" fill="none"/>
+  
+  <!-- Main group of friends - 16-bit pixel art style -->
+  <g transform="translate(20, 15)">
+    <!-- Friend 1 - Red dress - pixelated -->
+    <g transform="translate(0, 0)">
+      <!-- Head - pixel blocks -->
+      <rect x="8" y="0" width="16" height="16" fill="#FFCCBC"/>
+      
+      <!-- Hair - pixel blocks -->
+      <rect x="6" y="0" width="20" height="6" fill="#5D4037"/>
+      <rect x="4" y="4" width="4" height="8" fill="#5D4037"/>
+      <rect x="24" y="4" width="4" height="8" fill="#5D4037"/>
+      
+      <!-- Eyes - pixel dots -->
+      <rect x="10" y="8" width="4" height="4" fill="#000000"/>
+      <rect x="18" y="8" width="4" height="4" fill="#000000"/>
+      
+      <!-- Mouth - pixel line -->
+      <rect x="12" y="14" width="8" height="2" fill="#000000"/>
+      
+      <!-- Body - dress - pixelated -->
+      <rect x="8" y="16" width="16" height="24" fill="#EF5350"/>
+      
+      <!-- Arms - pixel blocks -->
+      <rect x="0" y="18" width="8" height="6" fill="#FFCCBC"/>
+      <rect x="24" y="18" width="8" height="6" fill="#FFCCBC"/>
+      
+      <!-- Legs - pixel blocks -->
+      <rect x="10" y="40" width="4" height="12" fill="#FFCCBC"/>
+      <rect x="18" y="40" width="4" height="12" fill="#FFCCBC"/>
+      
+      <!-- Shoes - pixel blocks -->
+      <rect x="8" y="52" width="8" height="4" fill="#880E4F"/>
+      <rect x="16" y="52" width="8" height="4" fill="#880E4F"/>
+    </g>
+    
+    <!-- Friend 2 - Blue dress - pixelated -->
+    <g transform="translate(36, 5)">
+      <!-- Head - pixel blocks -->
+      <rect x="8" y="0" width="16" height="16" fill="#FFECB3"/>
+      
+      <!-- Hair - pixel blocks -->
+      <rect x="6" y="0" width="20" height="8" fill="#000000"/>
+      <rect x="4" y="4" width="4" height="6" fill="#000000"/>
+      <rect x="24" y="4" width="4" height="6" fill="#000000"/>
+      
+      <!-- Eyes - pixel dots -->
+      <rect x="10" y="8" width="4" height="4" fill="#000000"/>
+      <rect x="18" y="8" width="4" height="4" fill="#000000"/>
+      
+      <!-- Mouth - pixel line -->
+      <rect x="12" y="14" width="8" height="2" fill="#000000"/>
+      
+      <!-- Body - dress - pixelated -->
+      <rect x="8" y="16" width="16" height="24" fill="#5C6BC0"/>
+      
+      <!-- Arms - pixel blocks -->
+      <rect x="0" y="18" width="8" height="6" fill="#FFECB3"/>
+      <rect x="24" y="18" width="8" height="6" fill="#FFECB3"/>
+      
+      <!-- Legs - pixel blocks -->
+      <rect x="10" y="40" width="4" height="12" fill="#FFECB3"/>
+      <rect x="18" y="40" width="4" height="12" fill="#FFECB3"/>
+      
+      <!-- Shoes - pixel blocks -->
+      <rect x="8" y="52" width="8" height="4" fill="#303F9F"/>
+      <rect x="16" y="52" width="8" height="4" fill="#303F9F"/>
+    </g>
+    
+    <!-- Friend 3 - Green dress - pixelated -->
+    <g transform="translate(72, 0)">
+      <!-- Head - pixel blocks -->
+      <rect x="8" y="0" width="16" height="16" fill="#FFF8E1"/>
+      
+      <!-- Hair - pixel blocks -->
+      <rect x="6" y="0" width="20" height="6" fill="#FF8F00"/>
+      <rect x="4" y="4" width="4" height="8" fill="#FF8F00"/>
+      <rect x="24" y="4" width="4" height="8" fill="#FF8F00"/>
+      
+      <!-- Eyes - pixel dots -->
+      <rect x="10" y="8" width="4" height="4" fill="#000000"/>
+      <rect x="18" y="8" width="4" height="4" fill="#000000"/>
+      
+      <!-- Mouth - pixel line -->
+      <rect x="12" y="14" width="8" height="2" fill="#000000"/>
+      
+      <!-- Body - dress - pixelated -->
+      <rect x="8" y="16" width="16" height="24" fill="#66BB6A"/>
+      
+      <!-- Arms - pixel blocks -->
+      <rect x="0" y="18" width="8" height="6" fill="#FFF8E1"/>
+      <rect x="24" y="18" width="8" height="6" fill="#FFF8E1"/>
+      
+      <!-- Legs - pixel blocks -->
+      <rect x="10" y="40" width="4" height="12" fill="#FFF8E1"/>
+      <rect x="18" y="40" width="4" height="12" fill="#FFF8E1"/>
+      
+      <!-- Shoes - pixel blocks -->
+      <rect x="8" y="52" width="8" height="4" fill="#2E7D32"/>
+      <rect x="16" y="52" width="8" height="4" fill="#2E7D32"/>
+    </g>
+  </g>
+  
+  <!-- Friendship indicators - pixel art style -->
+  <g>
+    <!-- Hand holding pixels between friends -->
+    <rect x="32" y="38" width="4" height="4" fill="#FFCCBC"/>
+    <rect x="36" y="38" width="4" height="4" fill="#FFECB3"/>
+    
+    <rect x="68" y="38" width="4" height="4" fill="#FFECB3"/>
+    <rect x="72" y="38" width="4" height="4" fill="#FFF8E1"/>
+    
+    <!-- Mini heart between friends -->
+    <rect x="48" y="30" width="2" height="2" fill="#EF5350"/>
+    <rect x="50" y="30" width="2" height="2" fill="#EF5350"/>
+    <rect x="52" y="30" width="2" height="2" fill="#EF5350"/>
+    <rect x="46" y="32" width="2" height="2" fill="#EF5350"/>
+    <rect x="54" y="32" width="2" height="2" fill="#EF5350"/>
+    <rect x="48" y="34" width="8" height="2" fill="#EF5350"/>
+    <rect x="50" y="36" width="4" height="2" fill="#EF5350"/>
+    
+    <!-- Pixel decoration elements -->
+    <rect x="24" y="24" width="2" height="2" fill="#FFFFFF"/>
+    <rect x="58" y="26" width="2" height="2" fill="#FFFFFF"/>
+    <rect x="92" y="24" width="2" height="2" fill="#FFFFFF"/>
+    <rect x="80" y="54" width="2" height="2" fill="#2E7D32"/>
+    <rect x="44" y="54" width="2" height="2" fill="#303F9F"/>
+    <rect x="16" y="50" width="2" height="2" fill="#880E4F"/>
+  </g>
+</svg> 

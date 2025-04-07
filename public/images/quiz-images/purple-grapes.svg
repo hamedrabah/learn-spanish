@@ -1,0 +1,69 @@
+<svg width="140" height="140" viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="140" height="140" fill="#f7f7ff" rx="4" />
+  
+  <!-- Grape stem -->
+  <path d="M70 20 L70 35 L67 40 L75 40 L70 35" stroke="#5d4037" stroke-width="3" fill="none" />
+  <rect x="65" y="38" width="10" height="5" fill="#7d5d4e" />
+  
+  <!-- Grape leaves -->
+  <path d="M55 25 Q45 20 50 35" fill="#4caf50" />
+  <path d="M85 25 Q95 20 90 35" fill="#4caf50" />
+  <path d="M65 25 Q55 15 45 30" fill="#2e7d32" />
+  <path d="M75 25 Q85 15 95 30" fill="#2e7d32" />
+  
+  <!-- Grape cluster outline for depth -->
+  <circle cx="72" cy="55" r="12" fill="#4a148c" />
+  <circle cx="57" cy="55" r="12" fill="#4a148c" />
+  <circle cx="65" cy="65" r="12" fill="#4a148c" />
+  <circle cx="80" cy="65" r="12" fill="#4a148c" />
+  <circle cx="50" cy="70" r="12" fill="#4a148c" />
+  <circle cx="65" cy="80" r="12" fill="#4a148c" />
+  <circle cx="80" cy="80" r="12" fill="#4a148c" />
+  <circle cx="95" cy="75" r="12" fill="#4a148c" />
+  <circle cx="53" cy="95" r="12" fill="#4a148c" />
+  <circle cx="72" cy="97" r="12" fill="#4a148c" />
+  <circle cx="90" cy="93" r="12" fill="#4a148c" />
+  
+  <!-- Individual grapes with highlights -->
+  <circle cx="72" cy="55" r="10" fill="#7b1fa2" />
+  <circle cx="57" cy="55" r="10" fill="#7b1fa2" />
+  <circle cx="65" cy="65" r="10" fill="#7b1fa2" />
+  <circle cx="80" cy="65" r="10" fill="#7b1fa2" />
+  <circle cx="50" cy="70" r="10" fill="#7b1fa2" />
+  <circle cx="65" cy="80" r="10" fill="#7b1fa2" />
+  <circle cx="80" cy="80" r="10" fill="#7b1fa2" />
+  <circle cx="95" cy="75" r="10" fill="#7b1fa2" />
+  <circle cx="53" cy="95" r="10" fill="#7b1fa2" />
+  <circle cx="72" cy="97" r="10" fill="#7b1fa2" />
+  <circle cx="90" cy="93" r="10" fill="#7b1fa2" />
+  
+  <!-- Grape highlights -->
+  <circle cx="69" cy="52" r="3" fill="#9c27b0" />
+  <circle cx="54" cy="52" r="3" fill="#9c27b0" />
+  <circle cx="62" cy="62" r="3" fill="#9c27b0" />
+  <circle cx="77" cy="62" r="3" fill="#9c27b0" />
+  <circle cx="47" cy="67" r="3" fill="#9c27b0" />
+  <circle cx="62" cy="77" r="3" fill="#9c27b0" />
+  <circle cx="77" cy="77" r="3" fill="#9c27b0" />
+  <circle cx="92" cy="72" r="3" fill="#9c27b0" />
+  <circle cx="50" cy="92" r="3" fill="#9c27b0" />
+  <circle cx="69" cy="94" r="3" fill="#9c27b0" />
+  <circle cx="87" cy="90" r="3" fill="#9c27b0" />
+  
+  <!-- Shine highlights -->
+  <circle cx="74" cy="53" r="2" fill="white" opacity="0.6" />
+  <circle cx="59" cy="53" r="2" fill="white" opacity="0.6" />
+  <circle cx="67" cy="63" r="2" fill="white" opacity="0.6" />
+  <circle cx="82" cy="63" r="2" fill="white" opacity="0.6" />
+  <circle cx="52" cy="68" r="2" fill="white" opacity="0.6" />
+  <circle cx="67" cy="78" r="2" fill="white" opacity="0.6" />
+  <circle cx="82" cy="78" r="2" fill="white" opacity="0.6" />
+  <circle cx="97" cy="73" r="2" fill="white" opacity="0.6" />
+  <circle cx="55" cy="93" r="2" fill="white" opacity="0.6" />
+  <circle cx="74" cy="95" r="2" fill="white" opacity="0.6" />
+  <circle cx="92" cy="91" r="2" fill="white" opacity="0.6" />
+  
+  <!-- Shadow under grape cluster -->
+  <ellipse cx="70" cy="115" rx="45" ry="10" fill="#e0e0e0" />
+</svg> 

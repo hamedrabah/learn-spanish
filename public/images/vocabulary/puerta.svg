@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="140" viewBox="0 0 100 140" xmlns="http://www.w3.org/2000/svg">
+  <!-- 16-bit style door (puerta) -->
+  
+  <!-- Door frame -->
+  <rect x="10" y="10" width="80" height="120" rx="0" ry="0" fill="#8D6E63" stroke="#5D4037" stroke-width="2"/>
+  
+  <!-- Door panel -->
+  <rect x="15" y="15" width="70" height="115" rx="0" ry="0" fill="#A1887F" stroke="#5D4037" stroke-width="1"/>
+  
+  <!-- Door panels/decoration -->
+  <rect x="20" y="20" width="60" height="50" fill="#8D6E63" stroke="#5D4037" stroke-width="1"/>
+  <rect x="20" y="75" width="60" height="50" fill="#8D6E63" stroke="#5D4037" stroke-width="1"/>
+  
+  <!-- Door handle -->
+  <circle cx="75" cy="70" r="4" fill="#FFC107" stroke="#FF9800" stroke-width="1"/>
+  <rect x="73" y="70" width="10" height="3" fill="#FFC107" stroke="#FF9800" stroke-width="0.5"/>
+  
+  <!-- Keyhole -->
+  <circle cx="75" cy="80" r="2" fill="#424242"/>
+  <rect x="74" y="80" width="2" height="4" fill="#424242"/>
+  
+  <!-- Shadow details -->
+  <rect x="25" y="25" width="1" height="40" fill="#5D4037" opacity="0.5"/>
+  <rect x="35" y="25" width="1" height="40" fill="#5D4037" opacity="0.5"/>
+  <rect x="45" y="25" width="1" height="40" fill="#5D4037" opacity="0.5"/>
+  <rect x="55" y="25" width="1" height="40" fill="#5D4037" opacity="0.5"/>
+  <rect x="65" y="25" width="1" height="40" fill="#5D4037" opacity="0.5"/>
+  
+  <rect x="25" y="80" width="1" height="40" fill="#5D4037" opacity="0.5"/>
+  <rect x="35" y="80" width="1" height="40" fill="#5D4037" opacity="0.5"/>
+  <rect x="45" y="80" width="1" height="40" fill="#5D4037" opacity="0.5"/>
+  <rect x="55" y="80" width="1" height="40" fill="#5D4037" opacity="0.5"/>
+  <rect x="65" y="80" width="1" height="40" fill="#5D4037" opacity="0.5"/>
+  
+  <!-- Pixel details -->
+  <rect x="20" y="22" width="2" height="2" fill="#5D4037"/>
+  <rect x="78" y="22" width="2" height="2" fill="#5D4037"/>
+  <rect x="20" y="123" width="2" height="2" fill="#5D4037"/>
+  <rect x="78" y="123" width="2" height="2" fill="#5D4037"/>
+</svg> 

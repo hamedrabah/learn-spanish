@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="80" viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- 16-bit style banana (plátano) -->
+  
+  <!-- Banana body -->
+  <path d="M 20,60 Q 20,10 60,10 Q 80,10 80,30 Q 60,30 40,50 Q 30,60 20,60 Z" fill="#ffee44" stroke="#ddcc00" stroke-width="2"/>
+  
+  <!-- Banana stem -->
+  <path d="M 20,60 Q 15,65 10,60" stroke="#aa7722" stroke-width="3" fill="none"/>
+  
+  <!-- Banana shading/details -->
+  <path d="M 25,55 Q 25,15 60,15 Q 75,15 75,30" stroke="#eecc00" stroke-width="2" fill="none"/>
+  <path d="M 30,50 Q 30,20 60,20" stroke="#eecc00" stroke-width="1.5" fill="none"/>
+  
+  <!-- Banana spots (small brown spots for ripeness) -->
+  <circle cx="30" cy="40" r="1.5" fill="#aa7722"/>
+  <circle cx="35" cy="30" r="1.5" fill="#aa7722"/>
+  <circle cx="45" cy="20" r="1.5" fill="#aa7722"/>
+  <circle cx="50" cy="35" r="1.5" fill="#aa7722"/>
+  <circle cx="65" cy="25" r="1.5" fill="#aa7722"/>
+  <circle cx="40" cy="45" r="1.5" fill="#aa7722"/>
+  
+  <!-- Slice at the end (optional) -->
+  <path d="M 20,60 Q 30,50 40,60" stroke="#ffffff" stroke-width="1.5" fill="#fffaee"/>
+  
+  <!-- Shadow -->
+  <ellipse cx="45" cy="75" rx="25" ry="5" fill="#333333" opacity="0.2"/>
+</svg> 

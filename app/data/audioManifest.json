@@ -1,0 +1,230 @@
+{
+  "questions": {
+    "1": "opponent_______casa_es_grande_.mp3",
+    "2": "opponent_______perros_son_ruidosos_.mp3",
+    "3": "opponent_______maestro_es_simpático_.mp3",
+    "4": "opponent_______amigas_están_aquí_.mp3",
+    "5": "opponent_______libro_está_en_la_mesa_.mp3",
+    "6": "opponent_quiero_______manzana_.mp3",
+    "7": "opponent_compré_______zapatos_nuevos_.mp3",
+    "8": "opponent_hay_______niño_en_el_parque_.mp3",
+    "9": "opponent_necesito_______pluma_azul_.mp3",
+    "10": "opponent_tengo_______amigos_en_méxico_.mp3",
+    "11": "opponent_el_cielo_es_______.mp3",
+    "12": "opponent_la_fresa_es_______.mp3",
+    "13": "opponent_la_hierba_es_______.mp3",
+    "14": "opponent_el_plátano_es_______.mp3",
+    "15": "opponent_la_nube_es_______.mp3",
+    "16": "opponent_el_sol_es______.mp3",
+    "17": "opponent_el_chocolate_es______.mp3",
+    "18": "opponent_el_carbón_es______.mp3",
+    "19": "opponent_la_nieve_es______.mp3",
+    "20": "opponent_las_uvas_son______.mp3",
+    "21": "opponent_el_gato_es_______.mp3",
+    "22": "opponent_la_flor_es_______.mp3",
+    "23": "opponent_el_coche_es_______.mp3",
+    "24": "opponent_la_película_es_______.mp3",
+    "25": "opponent_el_niño_es_______.mp3",
+    "26": "opponent_las_casas_son_______.mp3",
+    "27": "opponent_un_coche_es_______.mp3",
+    "28": "opponent_la_niña_es_______.mp3",
+    "29": "opponent_los_chicos_son_______.mp3",
+    "30": "opponent_unas_flores_son_______.mp3"
+  },
+  "answers": {
+    "1": {
+      "el": "player_el_casa_es_grande_.mp3",
+      "la": "player_la_casa_es_grande_.mp3",
+      "los": "player_los_casa_es_grande_.mp3",
+      "las": "player_las_casa_es_grande_.mp3"
+    },
+    "2": {
+      "el": "player_el_perros_son_ruidosos_.mp3",
+      "la": "player_la_perros_son_ruidosos_.mp3",
+      "los": "player_los_perros_son_ruidosos_.mp3",
+      "las": "player_las_perros_son_ruidosos_.mp3"
+    },
+    "3": {
+      "el": "player_el_maestro_es_simpático_.mp3",
+      "la": "player_la_maestro_es_simpático_.mp3",
+      "los": "player_los_maestro_es_simpático_.mp3",
+      "las": "player_las_maestro_es_simpático_.mp3"
+    },
+    "4": {
+      "el": "player_el_amigas_están_aquí_.mp3",
+      "la": "player_la_amigas_están_aquí_.mp3",
+      "los": "player_los_amigas_están_aquí_.mp3",
+      "las": "player_las_amigas_están_aquí_.mp3"
+    },
+    "5": {
+      "el": "player_el_libro_está_en_la_mesa_.mp3",
+      "la": "player_la_libro_está_en_la_mesa_.mp3",
+      "los": "player_los_libro_está_en_la_mesa_.mp3",
+      "las": "player_las_libro_está_en_la_mesa_.mp3"
+    },
+    "6": {
+      "un": "player_quiero_un_manzana_.mp3",
+      "una": "player_quiero_una_manzana_.mp3",
+      "unos": "player_quiero_unos_manzana_.mp3",
+      "unas": "player_quiero_unas_manzana_.mp3"
+    },
+    "7": {
+      "un": "player_compré_un_zapatos_nuevos_.mp3",
+      "una": "player_compré_una_zapatos_nuevos_.mp3",
+      "unos": "player_compré_unos_zapatos_nuevos_.mp3",
+      "unas": "player_compré_unas_zapatos_nuevos_.mp3"
+    },
+    "8": {
+      "un": "player_hay_un_niño_en_el_parque_.mp3",
+      "una": "player_hay_una_niño_en_el_parque_.mp3",
+      "unos": "player_hay_unos_niño_en_el_parque_.mp3",
+      "unas": "player_hay_unas_niño_en_el_parque_.mp3"
+    },
+    "9": {
+      "un": "player_necesito_un_pluma_azul_.mp3",
+      "una": "player_necesito_una_pluma_azul_.mp3",
+      "unos": "player_necesito_unos_pluma_azul_.mp3",
+      "unas": "player_necesito_unas_pluma_azul_.mp3"
+    },
+    "10": {
+      "un": "player_tengo_un_amigos_en_méxico_.mp3",
+      "una": "player_tengo_una_amigos_en_méxico_.mp3",
+      "unos": "player_tengo_unos_amigos_en_méxico_.mp3",
+      "unas": "player_tengo_unas_amigos_en_méxico_.mp3"
+    },
+    "11": {
+      "azul": "player_el_cielo_es_azul_.mp3",
+      "rojo": "player_el_cielo_es_rojo_.mp3",
+      "verde": "player_el_cielo_es_verde_.mp3",
+      "amarillo": "player_el_cielo_es_amarillo_.mp3",
+      "blanco": "player_el_cielo_es_blanco_.mp3"
+    },
+    "12": {
+      "azul": "player_la_fresa_es_azul_.mp3",
+      "rojo": "player_la_fresa_es_rojo_.mp3",
+      "verde": "player_la_fresa_es_verde_.mp3",
+      "amarillo": "player_la_fresa_es_amarillo_.mp3",
+      "blanco": "player_la_fresa_es_blanco_.mp3"
+    },
+    "13": {
+      "azul": "player_la_hierba_es_azul_.mp3",
+      "rojo": "player_la_hierba_es_rojo_.mp3",
+      "verde": "player_la_hierba_es_verde_.mp3",
+      "amarillo": "player_la_hierba_es_amarillo_.mp3",
+      "blanco": "player_la_hierba_es_blanco_.mp3"
+    },
+    "14": {
+      "azul": "player_el_plátano_es_azul_.mp3",
+      "rojo": "player_el_plátano_es_rojo_.mp3",
+      "verde": "player_el_plátano_es_verde_.mp3",
+      "amarillo": "player_el_plátano_es_amarillo_.mp3",
+      "blanco": "player_el_plátano_es_blanco_.mp3"
+    },
+    "15": {
+      "azul": "player_la_nube_es_azul_.mp3",
+      "rojo": "player_la_nube_es_rojo_.mp3",
+      "verde": "player_la_nube_es_verde_.mp3",
+      "amarillo": "player_la_nube_es_amarillo_.mp3",
+      "blanco": "player_la_nube_es_blanco_.mp3"
+    },
+    "16": {
+      "morado": "player_el_sol_es_morado.mp3",
+      "blanco": "player_el_sol_es_blanco.mp3",
+      "marrón": "player_el_sol_es_marrón.mp3",
+      "negro": "player_el_sol_es_negro.mp3",
+      "amarillo": "player_el_sol_es_amarillo.mp3"
+    },
+    "17": {
+      "morado": "player_el_chocolate_es_morado.mp3",
+      "blanco": "player_el_chocolate_es_blanco.mp3",
+      "marrón": "player_el_chocolate_es_marrón.mp3",
+      "negro": "player_el_chocolate_es_negro.mp3",
+      "amarillo": "player_el_chocolate_es_amarillo.mp3"
+    },
+    "18": {
+      "morado": "player_el_carbón_es_morado.mp3",
+      "blanco": "player_el_carbón_es_blanco.mp3",
+      "marrón": "player_el_carbón_es_marrón.mp3",
+      "negro": "player_el_carbón_es_negro.mp3",
+      "amarillo": "player_el_carbón_es_amarillo.mp3"
+    },
+    "19": {
+      "morado": "player_la_nieve_es_morado.mp3",
+      "blanco": "player_la_nieve_es_blanco.mp3",
+      "marrón": "player_la_nieve_es_marrón.mp3",
+      "negro": "player_la_nieve_es_negro.mp3",
+      "amarillo": "player_la_nieve_es_amarillo.mp3"
+    },
+    "20": {
+      "morado": "player_las_uvas_son_morado.mp3",
+      "blanco": "player_las_uvas_son_blanco.mp3",
+      "marrón": "player_las_uvas_son_marrón.mp3",
+      "negro": "player_las_uvas_son_negro.mp3",
+      "amarillo": "player_las_uvas_son_amarillo.mp3"
+    },
+    "21": {
+      "grande": "player_el_gato_es_grande_.mp3",
+      "hermosa": "player_el_gato_es_hermosa_.mp3",
+      "rápido": "player_el_gato_es_rápido_.mp3",
+      "aburrida": "player_el_gato_es_aburrida_.mp3",
+      "feliz": "player_el_gato_es_feliz_.mp3"
+    },
+    "22": {
+      "grande": "player_la_flor_es_grande_.mp3",
+      "hermosa": "player_la_flor_es_hermosa_.mp3",
+      "rápido": "player_la_flor_es_rápido_.mp3",
+      "aburrida": "player_la_flor_es_aburrida_.mp3",
+      "feliz": "player_la_flor_es_feliz_.mp3"
+    },
+    "23": {
+      "grande": "player_el_coche_es_grande_.mp3",
+      "hermosa": "player_el_coche_es_hermosa_.mp3",
+      "rápido": "player_el_coche_es_rápido_.mp3",
+      "aburrida": "player_el_coche_es_aburrida_.mp3",
+      "feliz": "player_el_coche_es_feliz_.mp3"
+    },
+    "24": {
+      "grande": "player_la_película_es_grande_.mp3",
+      "hermosa": "player_la_película_es_hermosa_.mp3",
+      "rápido": "player_la_película_es_rápido_.mp3",
+      "aburrida": "player_la_película_es_aburrida_.mp3",
+      "feliz": "player_la_película_es_feliz_.mp3"
+    },
+    "25": {
+      "grande": "player_el_niño_es_grande_.mp3",
+      "hermosa": "player_el_niño_es_hermosa_.mp3",
+      "rápido": "player_el_niño_es_rápido_.mp3",
+      "aburrida": "player_el_niño_es_aburrida_.mp3",
+      "feliz": "player_el_niño_es_feliz_.mp3"
+    },
+    "26": {
+      "blanco": "player_las_casas_son_blanco_.mp3",
+      "blanca": "player_las_casas_son_blanca_.mp3",
+      "blancos": "player_las_casas_son_blancos_.mp3",
+      "blancas": "player_las_casas_son_blancas_.mp3"
+    },
+    "27": {
+      "rojo": "player_un_coche_es_rojo_.mp3",
+      "roja": "player_un_coche_es_roja_.mp3",
+      "rojos": "player_un_coche_es_rojos_.mp3",
+      "rojas": "player_un_coche_es_rojas_.mp3"
+    },
+    "28": {
+      "inteligente": "player_la_niña_es_inteligente_.mp3",
+      "inteligenta": "player_la_niña_es_inteligenta_.mp3",
+      "inteligentes": "player_la_niña_es_inteligentes_.mp3"
+    },
+    "29": {
+      "alto": "player_los_chicos_son_alto_.mp3",
+      "alta": "player_los_chicos_son_alta_.mp3",
+      "altos": "player_los_chicos_son_altos_.mp3",
+      "altas": "player_los_chicos_son_altas_.mp3"
+    },
+    "30": {
+      "amarillo": "player_unas_flores_son_amarillo_.mp3",
+      "amarilla": "player_unas_flores_son_amarilla_.mp3",
+      "amarillos": "player_unas_flores_son_amarillos_.mp3",
+      "amarillas": "player_unas_flores_son_amarillas_.mp3"
+    }
+  }
+}

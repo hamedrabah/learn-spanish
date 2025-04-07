@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- 16-bit style dog (perro) -->
+  
+  <!-- Body -->
+  <rect x="30" y="45" width="40" height="25" fill="#cc9966" stroke="#996633" stroke-width="2" rx="5" ry="5"/>
+  
+  <!-- Head -->
+  <rect x="65" y="40" width="20" height="20" fill="#cc9966" stroke="#996633" stroke-width="2" rx="8" ry="8"/>
+  
+  <!-- Ears -->
+  <polygon points="65,40 60,30 70,35" fill="#996633" stroke="#663300" stroke-width="1"/>
+  <polygon points="85,40 90,30 80,35" fill="#996633" stroke="#663300" stroke-width="1"/>
+  
+  <!-- Tail -->
+  <path d="M 30,55 Q 15,45 20,35" stroke="#996633" stroke-width="5" fill="none"/>
+  
+  <!-- Legs -->
+  <rect x="35" y="70" width="5" height="15" fill="#cc9966" stroke="#996633" stroke-width="1"/>
+  <rect x="60" y="70" width="5" height="15" fill="#cc9966" stroke="#996633" stroke-width="1"/>
+  <rect x="70" y="60" width="5" height="15" fill="#cc9966" stroke="#996633" stroke-width="1"/>
+  <rect x="80" y="60" width="5" height="15" fill="#cc9966" stroke="#996633" stroke-width="1"/>
+  
+  <!-- Paws -->
+  <ellipse cx="37.5" cy="85" rx="5" ry="2" fill="#996633"/>
+  <ellipse cx="62.5" cy="85" rx="5" ry="2" fill="#996633"/>
+  <ellipse cx="72.5" cy="75" rx="5" ry="2" fill="#996633"/>
+  <ellipse cx="82.5" cy="75" rx="5" ry="2" fill="#996633"/>
+  
+  <!-- Eyes -->
+  <circle cx="70" cy="45" r="2" fill="#000000"/>
+  <circle cx="80" cy="45" r="2" fill="#000000"/>
+  
+  <!-- Nose -->
+  <rect x="75" y="50" width="5" height="5" fill="#000000" rx="2" ry="2"/>
+  
+  <!-- Mouth -->
+  <path d="M 75,55 Q 75,60 80,60 L 70,60 Q 75,60 75,55" fill="#cc6666"/>
+  
+  <!-- Spots (optional pattern) -->
+  <circle cx="45" cy="50" r="5" fill="#996633"/>
+  <circle cx="55" cy="60" r="4" fill="#996633"/>
+  <rect x="40" y="55" width="8" height="8" fill="#996633" rx="4" ry="4"/>
+  
+  <!-- Collar -->
+  <rect x="65" y="58" width="20" height="4" fill="#cc3333" stroke="#990000" stroke-width="1"/>
+  <circle cx="75" cy="62" r="2" fill="#ffcc00" stroke="#cc9900" stroke-width="0.5"/>
+  
+  <!-- Shadow -->
+  <ellipse cx="50" cy="88" rx="30" ry="5" fill="#000000" opacity="0.2"/>
+</svg> 

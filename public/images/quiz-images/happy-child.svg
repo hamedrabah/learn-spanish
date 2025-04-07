@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80" height="120" viewBox="0 0 80 120" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="80" height="120" fill="#f0f8ff" opacity="0.3"/>
+  
+  <!-- Ground/Grass -->
+  <rect x="0" y="100" width="80" height="20" fill="#7cbb5e"/>
+  
+  <!-- Body of the boy -->
+  <rect x="30" y="70" width="20" height="30" fill="#5dadec"/> <!-- Blue shirt -->
+  
+  <!-- Legs -->
+  <rect x="30" y="100" width="8" height="15" fill="#8b4513"/> <!-- Left leg (brown pants) -->
+  <rect x="42" y="100" width="8" height="15" fill="#8b4513"/> <!-- Right leg (brown pants) -->
+  
+  <!-- Shoes -->
+  <rect x="28" y="115" width="10" height="5" fill="#282828"/> <!-- Left shoe -->
+  <rect x="42" y="115" width="10" height="5" fill="#282828"/> <!-- Right shoe -->
+  
+  <!-- Arms -->
+  <rect x="20" y="75" width="10" height="6" fill="#5dadec"/> <!-- Left arm -->
+  <rect x="50" y="75" width="10" height="6" fill="#5dadec"/> <!-- Right arm -->
+  <rect x="16" y="75" width="4" height="8" fill="#ffcc99"/> <!-- Left hand -->
+  <rect x="60" y="75" width="4" height="8" fill="#ffcc99"/> <!-- Right hand -->
+  
+  <!-- Head -->
+  <rect x="30" y="40" width="20" height="30" rx="10" fill="#ffcc99"/> <!-- Face -->
+  
+  <!-- Hair -->
+  <rect x="28" y="35" width="24" height="10" rx="2" fill="#ffdd55"/> <!-- Blonde hair -->
+  <rect x="26" y="38" width="3" height="5" fill="#ffdd55"/> <!-- Left side hair -->
+  <rect x="51" y="38" width="3" height="5" fill="#ffdd55"/> <!-- Right side hair -->
+  
+  <!-- Face features -->
+  <rect x="34" y="50" width="3" height="3" fill="#000000"/> <!-- Left eye -->
+  <rect x="43" y="50" width="3" height="3" fill="#000000"/> <!-- Right eye -->
+  
+  <!-- Happy mouth - big smile -->
+  <path d="M34,60 Q40,68 46,60" stroke="#ff5555" stroke-width="2" fill="none"/>
+  
+  <!-- Rosy cheeks -->
+  <circle cx="32" cy="56" r="2" fill="#ff9999" opacity="0.6"/>
+  <circle cx="48" cy="56" r="2" fill="#ff9999" opacity="0.6"/>
+  
+  <!-- Happy elements -->
+  <path d="M55,40 Q60,45 56,50" stroke="#ffff00" stroke-width="1" fill="#ffff00"/> <!-- Happiness spark -->
+  <path d="M18,45 Q23,40 25,46" stroke="#ffff00" stroke-width="1" fill="#ffff00"/> <!-- Happiness spark -->
+  
+  <!-- Sun -->
+  <circle cx="70" cy="20" r="8" fill="#ffdd55"/>
+  <line x1="70" y1="8" x2="70" y2="4" stroke="#ffdd55" stroke-width="2"/>
+  <line x1="70" y1="36" x2="70" y2="32" stroke="#ffdd55" stroke-width="2"/>
+  <line x1="58" y1="20" x2="54" y2="20" stroke="#ffdd55" stroke-width="2"/>
+  <line x1="86" y1="20" x2="82" y2="20" stroke="#ffdd55" stroke-width="2"/>
+  <line x1="62" y1="12" x2="58" y2="8" stroke="#ffdd55" stroke-width="2"/>
+  <line x1="82" y1="32" x2="78" y2="28" stroke="#ffdd55" stroke-width="2"/>
+  <line x1="62" y1="28" x2="58" y2="32" stroke="#ffdd55" stroke-width="2"/>
+  <line x1="82" y1="8" x2="78" y2="12" stroke="#ffdd55" stroke-width="2"/>
+</svg> 

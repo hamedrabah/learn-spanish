@@ -1,0 +1,1361 @@
+.gameContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f5f0e1;
+  font-family: 'Pirata One', cursive, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  image-rendering: pixelated;
+}
+
+.scoreBoard {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #1e3d59;
+  color: #f5f0e1;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 4px solid #0a1b2a;
+  font-family: monospace;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.playerScore, .difficultyIndicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  height: 100%;
+  line-height: 1;
+}
+
+.opponentScore {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  height: 100%;
+  line-height: 1;
+  gap: 10px;
+}
+
+.opponentScore .iconButton {
+  padding: 4px;
+  margin: 0;
+}
+
+.opponentScore .iconButton img {
+  width: 24px;
+  height: 24px;
+}
+
+.duelScene {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  background-color: #8fb9aa;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 4px solid #3a6ea5;
+  image-rendering: pixelated;
+}
+
+.shipBackground {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/ocean.svg');
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+  z-index: 0;
+  image-rendering: auto;
+}
+
+.shipDeck {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 80px;
+  background-image: url('/images/ship-deck.svg');
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+@keyframes rockShip {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(1deg);
+  }
+  75% {
+    transform: rotate(-1deg);
+  }
+}
+
+.character {
+  width: 150px;
+  height: 250px;
+  position: relative;
+  transition: transform 0.5s ease;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.player {
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 0;
+  transform: none;
+  image-rendering: pixelated;
+  z-index: 10;
+}
+
+.opponent {
+  position: absolute;
+  left: 50%;
+  margin-left: 0px;
+  bottom: 0;
+  transform: none;
+  image-rendering: pixelated;
+  z-index: 9;
+}
+
+/* Isolate the flip transform to just the character image and sword */
+.opponent .characterImage, 
+.opponent .sword {
+  transform: scaleX(-1);  /* Keep the flip for character and sword */
+}
+
+.sword {
+  position: absolute;
+  width: 60px;
+  height: 20px;
+  bottom: 100px;
+  transform-origin: left center;
+  z-index: 5;
+  background-color: transparent;
+  background-image: url('/images/sword.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  image-rendering: auto;
+}
+
+.player .sword {
+  right: -10px;
+  transform: rotate(30deg);
+}
+
+.opponent .sword {
+  left: -10px;
+  transform: rotate(-30deg) scaleX(-1);
+}
+
+.characterImage {
+  width: 120px;
+  height: 180px;
+  position: relative;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 0 #000;
+  font-family: monospace;
+  image-rendering: pixelated;
+}
+
+.characterImage h3 {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2px 5px;
+  border-radius: 4px;
+  position: absolute;
+  top: -20px;
+  white-space: nowrap;
+}
+
+/* Remove the previous fix that wasn't working */
+.opponent .characterImage h3 {
+  display: inline-block;
+  transform: scaleX(-1) !important;
+}
+
+/* Add new styling for the opponent name that's outside the flipped container */
+.opponentName {
+  position: absolute;
+  top: -20px;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+}
+
+.opponentName h3 {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2px 5px;
+  border-radius: 4px;
+  display: inline-block;
+  color: white;
+  text-shadow: 2px 2px 0 #000;
+}
+
+.characterImage span {
+  font-size: 0;
+  margin: 0;
+}
+
+/* Player Character - Guybrush-inspired */
+.player .characterImage {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+  background-image: url('/images/guybrush.svg');
+}
+
+/* Opponent Character - LeChuck-inspired */
+.opponent .characterImage {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+  background-image: url('/images/lechuck.svg');
+}
+
+/* Character animations */
+.idle {
+  animation: idle 2s infinite ease-in-out;
+}
+
+.attack {
+  animation: attack 0.8s ease-in-out;
+}
+
+.attack .sword {
+  animation: swordAttack 0.8s ease-in-out;
+}
+
+.defend {
+  animation: defend 0.8s ease-in-out;
+}
+
+.defend .sword {
+  animation: swordDefend 0.8s ease-in-out;
+}
+
+.taunt {
+  animation: taunt 1s ease-in-out;
+}
+
+@keyframes idle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes attack {
+  0% {
+    transform: translateX(0) rotate(0);
+  }
+  50% {
+    transform: translateX(30px) rotate(10deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0);
+  }
+}
+
+@keyframes swordAttack {
+  0% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}
+
+@keyframes defend {
+  0% {
+    transform: translateX(0) rotate(0);
+  }
+  50% {
+    transform: translateX(-20px) rotate(-5deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0);
+  }
+}
+
+@keyframes swordDefend {
+  0% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(-30deg);
+  }
+}
+
+@keyframes taunt {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+}
+
+.duelDialog {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+  display: none; /* Hide the central dialogue since we'll use character-specific dialogues */
+  justify-content: center;
+  z-index: 20;
+}
+
+/* Player dialogue bubble */
+.playerDialogue {
+  position: absolute;
+  top: -100px; /* Match opponent dialogue position */
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 20;
+  transform: none;
+}
+
+/* Opponent dialogue bubble */
+.opponentDialogue {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 20;
+  transform: none;
+}
+
+.insultBubble {
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 80%;
+  position: relative;
+  border: none;
+  animation: bubblePop 0.5s ease-out;
+  font-family: monospace;
+}
+
+/* Player-specific dialogue text */
+.playerInsult {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0; /* Match opponent styles */
+  color: white;
+  letter-spacing: -0.02em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  line-height: 1.6rem; /* Match opponent line height */
+  display: block;
+  overflow: visible;
+  min-height: 1.6rem;
+  text-align: center;
+  width: 100%;
+  max-height: none;
+  word-break: break-word;
+  white-space: normal;
+}
+
+/* Opponent-specific dialogue text */
+.opponentInsult {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  color: #aa66ff;
+  letter-spacing: -0.02em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  line-height: 1.6rem;
+  display: block;
+  overflow: visible;
+  min-height: 1.6rem;
+  text-align: center;
+  width: 100%;
+  max-height: none;
+  word-break: break-word;
+  white-space: normal;
+}
+
+.insult {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: white;
+  letter-spacing: -0.02em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.translation {
+  font-size: 1.3rem;
+  font-style: italic;
+  color: white;
+  letter-spacing: -0.01em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.responseContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 2;
+}
+
+.translationToggle {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.toggleButton {
+  background-color: #1e3d59;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Pirata One', cursive, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s;
+}
+
+.toggleButton:hover {
+  background-color: #0a1b2a;
+}
+
+.stopButton {
+  background-color: #a31621;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Pirata One', cursive, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s;
+}
+
+.stopButton:hover {
+  background-color: #7a0712;
+}
+
+.loadingIndicator {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 0.8rem;
+  color: #d35400;
+  background-color: #fef0e3;
+  padding: 5px 10px;
+  border-radius: 4px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.responses {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.responseButton {
+  background-color: #e6c78c;
+  border: 4px solid #b39966;
+  border-radius: 0;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: left;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
+  font-family: monospace;
+}
+
+.responseButton:hover {
+  background-color: #f0d6a0;
+  transform: translateY(-3px);
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.responseButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  border-color: #999;
+  transform: none;
+  box-shadow: none;
+  opacity: 0.7;
+}
+
+.responseButton p {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #3a2912;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+}
+
+.responseTranslation {
+  font-size: 1.1rem !important;
+  font-style: italic;
+  color: white;
+  letter-spacing: -0.01em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Feedback styles */
+.feedbackContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 20px;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.correctFeedback, .incorrectFeedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  animation: pulse 1s infinite;
+}
+
+.correctFeedback {
+  background-color: rgba(0, 128, 0, 0.2);
+  border: 2px solid rgb(0, 128, 0);
+}
+
+.incorrectFeedback {
+  background-color: rgba(200, 0, 0, 0.2);
+  border: 2px solid rgb(200, 0, 0);
+}
+
+.correctFeedback span, .incorrectFeedback span {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.correctFeedback span {
+  color: rgb(0, 200, 0);
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+}
+
+.incorrectFeedback span {
+  color: rgb(255, 0, 0);
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+}
+
+.correctFeedback p, .incorrectFeedback p {
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* Intro screen - Monkey Island Style */
+.introContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  background: linear-gradient(to bottom, #0D47A1, #1976D2);
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Pirata One', cursive, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.introContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 100 100"><g fill="white" opacity="0.6"><circle cx="10" cy="10" r="1" /><circle cx="20" cy="25" r="1" /><circle cx="40" cy="15" r="1" /><circle cx="60" cy="30" r="1" /><circle cx="80" cy="10" r="1" /><circle cx="90" cy="40" r="1" /><circle cx="30" cy="50" r="1" /><circle cx="50" cy="70" r="1" /><circle cx="70" cy="65" r="1" /><circle cx="85" cy="80" r="1" /><circle cx="15" cy="80" r="1" /><circle cx="35" cy="95" r="1" /><circle cx="65" cy="90" r="1" /></g></svg>');
+  background-size: 400px 400px;
+  opacity: 0.8;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.pirateShip {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  margin-bottom: 20px;
+  z-index: 10;
+}
+
+.shipImage {
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/island-silhouette.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  filter: brightness(0.1);
+}
+
+@keyframes floatShip {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.introContainer h1 {
+  font-size: 3.5rem;
+  color: #F06292;
+  margin-bottom: 20px;
+  text-shadow: 4px 4px 0px #000000;
+  position: relative;
+  z-index: 1;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.introContainer p {
+  font-size: 1.3rem;
+  color: #FFFFFF;
+  max-width: 600px;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+  text-shadow: 2px 2px 0px #000000;
+}
+
+.difficultySelection {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  z-index: 1;
+  margin-top: 20px;
+}
+
+.difficultySelection h2 {
+  font-size: 1.8rem;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 0px #000000;
+}
+
+.difficultyButton, .actionButton {
+  background-color: #23374D;
+  color: white;
+  border: 3px solid #FFD700;
+  border-radius: 0px;
+  padding: 15px 30px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  font-family: 'Pirata One', cursive, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 2px 2px 0px #000000;
+  letter-spacing: 1px;
+}
+
+.difficultyButton:hover, .actionButton:hover {
+  background-color: #FFD700;
+  color: #000000;
+  text-shadow: none;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+}
+
+/* Mode indicator in intro screen - Monkey Island Style */
+.modeIndicator {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 10px 0 30px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.modeCard {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 3px solid #FFD700;
+  border-radius: 0px;
+  padding: 20px;
+  width: 260px;
+  text-align: center;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.modeCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
+}
+
+.modeCard.selected {
+  border-color: #4CAF50;
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 15px rgba(76, 175, 80, 0.7);
+}
+
+.modeCard h3 {
+  color: #FFD700;
+  margin-top: 0;
+  font-size: 1.6rem;
+  text-shadow: 2px 2px 0px #000000;
+  letter-spacing: 1px;
+}
+
+.modeCard p {
+  color: #FFFFFF;
+  font-size: 1rem;
+  text-shadow: 1px 1px 0px #000000;
+}
+
+/* Result screens */
+.resultContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.victoryAnimation {
+  background-color: #e8f4ff;
+  animation: victoryBg 2s ease-in-out infinite;
+}
+
+.defeatAnimation {
+  background-color: #ffebe8;
+  animation: defeatBg 2s ease-in-out infinite;
+}
+
+@keyframes victoryBg {
+  0%, 100% {
+    background-color: #e8f4ff;
+  }
+  50% {
+    background-color: #d0e8ff;
+  }
+}
+
+@keyframes defeatBg {
+  0%, 100% {
+    background-color: #ffebe8;
+  }
+  50% {
+    background-color: #ffe0dc;
+  }
+}
+
+.victoryPirate, .defeatPirate {
+  width: 300px;
+  height: 300px;
+  margin: 20px 0;
+}
+
+.victoryImage {
+  width: 100%;
+  height: 100%;
+  background-image: url('https://cdn.pixabay.com/photo/2013/07/13/12/44/pirate-160155_1280.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: victory 1.5s ease-in-out infinite;
+}
+
+.defeatImage {
+  width: 100%;
+  height: 100%;
+  background-image: url('https://cdn.pixabay.com/photo/2013/07/13/12/44/pirate-160152_1280.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: defeat 2s ease-in-out infinite;
+}
+
+@keyframes victory {
+  0%, 100% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+}
+
+@keyframes defeat {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .duelScene {
+    height: 40vh;
+  }
+  
+  .character {
+    width: 150px;
+    height: 225px;
+  }
+  
+  .insult {
+    font-size: 1.2rem;
+  }
+  
+  .player {
+    left: 20px;
+  }
+  
+  .opponent {
+    right: 20px;
+  }
+  
+  .pirateShip {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+/* Add new styling for the player name to match the opponent name */
+.playerName {
+  position: absolute;
+  top: -20px;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+}
+
+.playerName h3 {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2px 5px;
+  border-radius: 4px;
+  display: inline-block;
+  color: white;
+  text-shadow: 2px 2px 0 #000;
+}
+
+/* Fixed position opponent name that won't be affected by the opponent's transforms */
+.opponentNameFixed {
+  position: absolute;
+  right: 90px;
+  top: 40px;
+  z-index: 20;
+  pointer-events: none;
+}
+
+.opponentNameFixed h3 {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2px 5px;
+  border-radius: 4px;
+  display: inline-block;
+  color: white;
+  text-shadow: 2px 2px 0 #000;
+}
+
+@keyframes bubblePop {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.insultBubble:after {
+  display: none;
+}
+
+.insultBubble:before {
+  display: none;
+}
+
+/* Quiz Mode Styles */
+.quizContentContainer {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  z-index: 10;
+}
+
+.quizQuestionContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  max-width: 50%;
+}
+
+.quizQuestion {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+  border: 2px solid #ffcc00;
+  box-shadow: 0 0 15px rgba(255, 204, 0, 0.5);
+}
+
+.quizQuestion h2 {
+  color: #ffcc00;
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+.questionText {
+  color: white;
+  font-size: 1.6rem;
+  margin: 15px 0;
+}
+
+.quizAnswers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.selectedAnswer {
+  border: 3px solid #4CAF50 !important;
+  background-color: rgba(76, 175, 80, 0.2) !important;
+}
+
+/* Vocabulary Box styling */
+.vocabularyBox {
+  flex: 1;
+  max-width: 40%;
+  animation: appearAndFloat 0.5s ease-out forwards;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid #ffcc00;
+  box-shadow: 0 0 15px rgba(255, 204, 0, 0.5);
+  height: fit-content;
+}
+
+.vocabularyBoxContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.vocabularyLabel {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  padding: 8px 15px;
+  font-size: 16px;
+  margin-top: 15px;
+  display: inline-block;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.vocabularyBox img {
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 768px) {
+  .quizContentContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .quizQuestionContainer,
+  .vocabularyBox {
+    max-width: 90%;
+  }
+}
+
+/* Make the vocabulary box scale up when the correct answer is selected */
+@keyframes correctImagePop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.vocabularyBox.correct {
+  animation: correctImagePop 0.5s ease-out;
+  border-color: #00ff00;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.6);
+}
+
+/* Dim the box when the answer is incorrect */
+.vocabularyBox.incorrect {
+  filter: grayscale(100%) brightness(0.7);
+  border-color: #ff0000;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+  transition: all 0.3s ease;
+}
+
+.modeSelection {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.modeButton {
+  background-color: #4a6fa5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.modeButton:hover {
+  background-color: #5a7fb5;
+  transform: scale(1.03);
+}
+
+/* Mode indicator in intro screen */
+.modeIndicator {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.modeCard {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid #ffcc00;
+  border-radius: 10px;
+  padding: 15px;
+  width: 220px;
+  text-align: center;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.modeCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.modeCard.selected {
+  border-color: #4CAF50;
+  background-color: rgba(76, 175, 80, 0.2);
+}
+
+.modeCard h3 {
+  color: #ffcc00;
+  margin-top: 0;
+}
+
+.modeCard p {
+  color: white;
+  font-size: 0.9rem;
+}
+
+.modeCard img {
+  width: 80px;
+  height: 80px;
+  margin: 10px auto;
+  display: block;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .modeIndicator {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .modeCard {
+    width: 80%;
+    max-width: 280px;
+  }
+}
+
+.playerSpeaking {
+  background-color: rgba(0, 100, 150, 0.7);
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-top: 15px;
+  color: white;
+  font-size: 1.4rem;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.opponentSpeaking {
+  background-color: rgba(150, 0, 0, 0.7);
+  border: 2px solid #ffcc00;
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-top: 15px;
+  color: white;
+  font-size: 1.4rem;
+  text-weight: bold;
+  text-align: center;
+  animation: pulsate 1.5s infinite alternate;
+}
+
+@keyframes pulsate {
+  0% { transform: scale(1); text-shadow: 0 0 10px rgba(255, 204, 0, 0.5); }
+  100% { transform: scale(1.05); text-shadow: 0 0 20px rgba(255, 204, 0, 0.8); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Quiz image animation */
+@keyframes appearAndFloat {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.quizImage {
+  animation: appearAndFloat 0.5s ease-out forwards;
+}
+
+.quizImage img {
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+}
+
+/* Make the quiz image scale up when the correct answer is selected */
+@keyframes correctImagePop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.quizImage.correct img {
+  animation: correctImagePop 0.5s ease-out;
+}
+
+/* Gray out the image when the answer is incorrect */
+.quizImage.incorrect img {
+  filter: grayscale(100%) brightness(0.7);
+  transition: all 0.3s ease;
+}
+
+.submitButton {
+  background-color: #ffcc00;
+  color: #000;
+  font-weight: bold;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: block;
+  margin: 20px auto 0;
+}
+
+.submitButton:hover {
+  background-color: #ffdb4d;
+  transform: scale(1.05);
+}
+
+.submitButton:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.iconButton img {
+  width: 32px;
+  height: 32px;
+  image-rendering: pixelated;
+}
+
+.opponentScore .iconButton {
+  padding: 4px;
+  margin: 0;
+}
+
+.opponentScore .iconButton img {
+  width: 24px;
+  height: 24px;
+}
+
+.muteButton {
+  background-color: transparent;
+  border: none;
+}
+
+.muteButton:hover {
+  background-color: transparent;
+  transform: scale(1.1);
+  box-shadow: none;
+}
+
+.opponentScore .muteButton {
+  padding: 2px;
+  margin: 0;
+  border: none;
+  box-shadow: none;
+}
+
+/* Health Bar Styles */
+.healthBar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: transparent;
+  padding: 8px 15px;
+  width: auto;
+  height: 100%;
+  margin: 0;
+  align-items: center;
+}
+
+/* Heart sprites styling */
+.heart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heartSvg {
+  width: 24px;
+  height: 24px;
+}
+
+.heartFull .heartPixels rect {
+  fill: #ff0000; /* Red fill for full hearts */
+}
+
+.heartEmpty .heartPixels rect {
+  fill: #550000; /* Dark red fill for empty hearts */
+}

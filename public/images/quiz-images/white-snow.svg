@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="80" viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- 16-bit style white snow scene -->
+  
+  <!-- Sky background with slight blue gradient -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#B3E5FC;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Sky -->
+  <rect width="120" height="80" fill="url(#skyGradient)"/>
+  
+  <!-- Snow hills in the distance -->
+  <path d="M0,60 C20,45 35,50 50,40 C65,30 80,45 95,35 C110,25 120,40 120,50 L120,80 L0,80 Z" fill="#F5F5F5"/>
+  
+  <!-- Snow mounds in foreground -->
+  <path d="M0,65 C10,55 25,60 40,55 C55,50 65,60 85,55 C100,50 115,60 120,65 L120,80 L0,80 Z" fill="#FFFFFF"/>
+  
+  <!-- Individual snow drifts -->
+  <ellipse cx="20" cy="70" rx="15" ry="5" fill="#FFFFFF" stroke="#EEEEEE" stroke-width="0.5"/>
+  <ellipse cx="60" cy="75" rx="20" ry="4" fill="#FFFFFF" stroke="#EEEEEE" stroke-width="0.5"/>
+  <ellipse cx="95" cy="72" rx="18" ry="6" fill="#FFFFFF" stroke="#EEEEEE" stroke-width="0.5"/>
+  
+  <!-- Snowflakes - larger ones -->
+  <g fill="#FFFFFF" stroke="#E3F2FD" stroke-width="0.5">
+    <path d="M30,20 L30,10 M25,15 L35,15" stroke-width="1" stroke="#FFFFFF"/>
+    <path d="M30,20 L27,17 M30,20 L33,17 M30,20 L27,23 M30,20 L33,23" stroke-width="0.7" stroke="#FFFFFF"/>
+    <circle cx="30" cy="20" r="1" fill="#FFFFFF"/>
+    
+    <path d="M80,15 L80,5 M75,10 L85,10" stroke-width="1" stroke="#FFFFFF"/>
+    <path d="M80,15 L77,12 M80,15 L83,12 M80,15 L77,18 M80,15 L83,18" stroke-width="0.7" stroke="#FFFFFF"/>
+    <circle cx="80" cy="15" r="1" fill="#FFFFFF"/>
+    
+    <path d="M50,30 L50,20 M45,25 L55,25" stroke-width="1" stroke="#FFFFFF"/>
+    <path d="M50,30 L47,27 M50,30 L53,27 M50,30 L47,33 M50,30 L53,33" stroke-width="0.7" stroke="#FFFFFF"/>
+    <circle cx="50" cy="30" r="1" fill="#FFFFFF"/>
+  </g>
+  
+  <!-- Smaller snowflakes scattered around -->
+  <g fill="#FFFFFF">
+    <circle cx="15" cy="25" r="0.8"/>
+    <circle cx="40" cy="15" r="0.8"/>
+    <circle cx="65" cy="20" r="0.8"/>
+    <circle cx="90" cy="25" r="0.8"/>
+    <circle cx="110" cy="15" r="0.8"/>
+    <circle cx="25" cy="40" r="0.8"/>
+    <circle cx="45" cy="45" r="0.8"/>
+    <circle cx="75" cy="35" r="0.8"/>
+    <circle cx="100" cy="40" r="0.8"/>
+    <circle cx="60" cy="10" r="0.8"/>
+  </g>
+  
+  <!-- Pixel pattern on the ground to simulate snow texture -->
+  <g fill="#F8F8FF" opacity="0.8">
+    <rect x="10" y="72" width="1" height="1"/>
+    <rect x="15" y="75" width="1" height="1"/>
+    <rect x="25" y="73" width="1" height="1"/>
+    <rect x="35" y="76" width="1" height="1"/>
+    <rect x="45" y="74" width="1" height="1"/>
+    <rect x="55" y="77" width="1" height="1"/>
+    <rect x="65" y="73" width="1" height="1"/>
+    <rect x="75" y="76" width="1" height="1"/>
+    <rect x="85" y="74" width="1" height="1"/>
+    <rect x="95" y="77" width="1" height="1"/>
+    <rect x="105" y="75" width="1" height="1"/>
+  </g>
+  
+  <!-- Sparkles to indicate ice/reflections -->
+  <g fill="#FFFFFF" opacity="0.9">
+    <circle cx="22" cy="68" r="0.5"/>
+    <circle cx="40" cy="67" r="0.5"/>
+    <circle cx="58" cy="69" r="0.5"/>
+    <circle cx="75" cy="66" r="0.5"/>
+    <circle cx="92" cy="68" r="0.5"/>
+    <circle cx="110" cy="67" r="0.5"/>
+  </g>
+  
+  <!-- Text label "BLANCA" (white) in snow style -->
+  <g transform="translate(40, 40)">
+    <text x="0" y="0" font-family="Arial" font-size="12" font-weight="bold" fill="#FFFFFF" stroke="#E1F5FE" stroke-width="0.5">BLANCA</text>
+  </g>
+</svg> 

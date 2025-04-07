@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Island silhouette in Monkey Island style -->
+  <defs>
+    <linearGradient id="islandGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:0.7" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Island silhouette -->
+  <path d="M0,390 
+           L120,380 
+           L150,360 
+           L180,370 
+           L220,365 
+           L240,325
+           L270,335
+           L300,295
+           L310,325
+           L340,290
+           L360,340
+           L380,315
+           L400,280
+           L420,290
+           L440,240
+           L460,200
+           L480,160
+           L500,130
+           L520,160
+           L540,200
+           L560,180
+           L580,220
+           L600,250
+           L620,280
+           L640,310
+           L660,330
+           L680,345
+           L700,360
+           L720,370
+           L800,380
+           L800,400
+           L0,400 Z" 
+        fill="url(#islandGlow)" />
+  
+  <!-- Reflections/highlights on mountain edges (subtle) -->
+  <path d="M460,200 L480,160 L500,130 L520,160" 
+        stroke="#444444" 
+        stroke-width="2" 
+        fill="none" 
+        opacity="0.5" />
+  
+  <!-- Some pixel texture on mountains -->
+  <g opacity="0.3">
+    <rect x="450" y="190" width="4" height="4" fill="#333333" />
+    <rect x="470" y="170" width="4" height="4" fill="#333333" />
+    <rect x="490" y="140" width="4" height="4" fill="#333333" />
+    <rect x="510" y="150" width="4" height="4" fill="#333333" />
+    <rect x="530" y="190" width="4" height="4" fill="#333333" />
+    <rect x="550" y="210" width="4" height="4" fill="#333333" />
+    <rect x="410" y="290" width="4" height="4" fill="#333333" />
+    <rect x="350" y="310" width="4" height="4" fill="#333333" />
+    <rect x="280" y="320" width="4" height="4" fill="#333333" />
+    <rect x="200" y="350" width="4" height="4" fill="#333333" />
+  </g>
+  
+  <!-- Water ripples (subtle) -->
+  <g opacity="0.2">
+    <path d="M50,390 Q60,388 70,390" stroke="#444444" stroke-width="1" fill="none" />
+    <path d="M150,380 Q160,378 170,380" stroke="#444444" stroke-width="1" fill="none" />
+    <path d="M250,370 Q260,368 270,370" stroke="#444444" stroke-width="1" fill="none" />
+    <path d="M350,380 Q360,378 370,380" stroke="#444444" stroke-width="1" fill="none" />
+    <path d="M450,380 Q460,378 470,380" stroke="#444444" stroke-width="1" fill="none" />
+    <path d="M550,380 Q560,378 570,380" stroke="#444444" stroke-width="1" fill="none" />
+    <path d="M650,380 Q660,378 670,380" stroke="#444444" stroke-width="1" fill="none" />
+    <path d="M750,380 Q760,378 770,380" stroke="#444444" stroke-width="1" fill="none" />
+  </g>
+</svg> 

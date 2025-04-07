@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- 16-bit style flower (flor) -->
+  
+  <!-- Stem -->
+  <rect x="48" y="50" width="4" height="40" fill="#33cc33" stroke="#009900" stroke-width="1"/>
+  
+  <!-- Leaf left -->
+  <path d="M 48,70 Q 30,65 40,55" fill="#33cc33" stroke="#009900" stroke-width="1"/>
+  
+  <!-- Leaf right -->
+  <path d="M 52,60 Q 70,55 60,45" fill="#33cc33" stroke="#009900" stroke-width="1"/>
+  
+  <!-- Flower petals -->
+  <circle cx="50" cy="30" r="12" fill="#ff99cc" stroke="#ff66aa" stroke-width="1"/> <!-- Top petal -->
+  <circle cx="35" cy="35" r="12" fill="#ff99cc" stroke="#ff66aa" stroke-width="1"/> <!-- Top-left petal -->
+  <circle cx="30" cy="50" r="12" fill="#ff99cc" stroke="#ff66aa" stroke-width="1"/> <!-- Left petal -->
+  <circle cx="35" cy="65" r="12" fill="#ff99cc" stroke="#ff66aa" stroke-width="1"/> <!-- Bottom-left petal -->
+  <circle cx="50" cy="70" r="12" fill="#ff99cc" stroke="#ff66aa" stroke-width="1"/> <!-- Bottom petal -->
+  <circle cx="65" cy="65" r="12" fill="#ff99cc" stroke="#ff66aa" stroke-width="1"/> <!-- Bottom-right petal -->
+  <circle cx="70" cy="50" r="12" fill="#ff99cc" stroke="#ff66aa" stroke-width="1"/> <!-- Right petal -->
+  <circle cx="65" cy="35" r="12" fill="#ff99cc" stroke="#ff66aa" stroke-width="1"/> <!-- Top-right petal -->
+  
+  <!-- Flower center -->
+  <circle cx="50" cy="50" r="10" fill="#ffcc00" stroke="#ff9900" stroke-width="1"/>
+  <circle cx="50" cy="50" r="6" fill="#cc6600"/>
+  
+  <!-- Pixel pattern in center -->
+  <rect x="48" y="45" width="2" height="2" fill="#663300"/>
+  <rect x="52" y="45" width="2" height="2" fill="#663300"/>
+  <rect x="46" y="48" width="2" height="2" fill="#663300"/>
+  <rect x="50" y="48" width="2" height="2" fill="#663300"/>
+  <rect x="54" y="48" width="2" height="2" fill="#663300"/>
+  <rect x="48" y="52" width="2" height="2" fill="#663300"/>
+  <rect x="52" y="52" width="2" height="2" fill="#663300"/>
+  
+  <!-- Ground/dirt hint -->
+  <rect x="25" y="90" width="50" height="5" fill="#996633" stroke="#663300" stroke-width="1"/>
+  <rect x="30" y="88" width="40" height="2" fill="#996633"/>
+  
+  <!-- Tiny decorative elements -->
+  <circle cx="30" cy="93" r="1" fill="#663300"/>
+  <circle cx="40" cy="92" r="1" fill="#663300"/>
+  <circle cx="60" cy="92" r="1" fill="#663300"/>
+  <circle cx="70" cy="94" r="1" fill="#663300"/>
+  
+  <!-- Small bug on leaf (16-bit detail) -->
+  <circle cx="40" cy="63" r="1.5" fill="#cc0000"/>
+  <rect x="39" y="61" width="2" height="1" fill="#000000"/>
+  <rect x="38" y="62" width="1" height="1" fill="#000000"/>
+  <rect x="41" y="62" width="1" height="1" fill="#000000"/>
+</svg> 

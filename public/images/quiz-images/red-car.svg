@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150" height="90" viewBox="0 0 150 90" xmlns="http://www.w3.org/2000/svg">
+  <!-- 16-bit style red car -->
+  
+  <!-- Background with subtle gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A237E;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:0.1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="150" height="90" fill="url(#bgGradient)"/>
+  
+  <!-- Road -->
+  <rect x="0" y="70" width="150" height="20" fill="#424242" stroke="#212121" stroke-width="1"/>
+  
+  <!-- Road markings -->
+  <rect x="10" y="79" width="15" height="2" fill="#FFFFFF"/>
+  <rect x="40" y="79" width="15" height="2" fill="#FFFFFF"/>
+  <rect x="70" y="79" width="15" height="2" fill="#FFFFFF"/>
+  <rect x="100" y="79" width="15" height="2" fill="#FFFFFF"/>
+  <rect x="130" y="79" width="15" height="2" fill="#FFFFFF"/>
+  
+  <!-- Car base shape -->
+  <path d="M30,65 L40,45 L110,45 L120,65 L125,65 C130,65 130,70 125,70 L120,70 L115,75 L35,75 L30,70 L25,70 C20,70 20,65 25,65 Z" fill="#D32F2F" stroke="#B71C1C" stroke-width="2"/>
+  
+  <!-- Car details - windows -->
+  <path d="M45,47 L52,65 L98,65 L105,47 Z" fill="#90CAF9" stroke="#1976D2" stroke-width="1"/>
+  <line x1="75" y1="47" x2="75" y2="65" stroke="#1976D2" stroke-width="1.5"/>
+  
+  <!-- Car details - lights -->
+  <rect x="32" y="55" width="6" height="4" rx="1" fill="#FF5252" stroke="#D50000" stroke-width="0.5"/>
+  <rect x="112" y="55" width="6" height="4" rx="1" fill="#FFEB3B" stroke="#FBC02D" stroke-width="0.5"/>
+  
+  <!-- Car grille -->
+  <rect x="112" y="60" width="8" height="5" rx="1" fill="#BDBDBD" stroke="#9E9E9E" stroke-width="0.5"/>
+  <line x1="114" y1="61" x2="114" y2="64" stroke="#616161" stroke-width="0.5"/>
+  <line x1="116" y1="61" x2="116" y2="64" stroke="#616161" stroke-width="0.5"/>
+  <line x1="118" y1="61" x2="118" y2="64" stroke="#616161" stroke-width="0.5"/>
+  
+  <!-- Car door handles -->
+  <rect x="60" y="57" width="5" height="2" rx="1" fill="#BDBDBD" stroke="#9E9E9E" stroke-width="0.5"/>
+  <rect x="85" y="57" width="5" height="2" rx="1" fill="#BDBDBD" stroke="#9E9E9E" stroke-width="0.5"/>
+  
+  <!-- Wheels with 16-bit style pixel look -->
+  <g transform="translate(45, 75)">
+    <circle cx="0" cy="0" r="10" fill="#212121" stroke="#000000" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="6" fill="#757575" stroke="#616161" stroke-width="0.5"/>
+    <circle cx="0" cy="0" r="2" fill="#424242"/>
+    <rect x="-1" y="-6" width="2" height="12" fill="#757575"/>
+    <rect x="-6" y="-1" width="12" height="2" fill="#757575"/>
+  </g>
+  
+  <g transform="translate(105, 75)">
+    <circle cx="0" cy="0" r="10" fill="#212121" stroke="#000000" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="6" fill="#757575" stroke="#616161" stroke-width="0.5"/>
+    <circle cx="0" cy="0" r="2" fill="#424242"/>
+    <rect x="-1" y="-6" width="2" height="12" fill="#757575"/>
+    <rect x="-6" y="-1" width="12" height="2" fill="#757575"/>
+  </g>
+  
+  <!-- Wheel shadows -->
+  <ellipse cx="45" cy="77" rx="12" ry="2" fill="#000000" opacity="0.3"/>
+  <ellipse cx="105" cy="77" rx="12" ry="2" fill="#000000" opacity="0.3"/>
+  
+  <!-- Car shadow -->
+  <ellipse cx="75" cy="77" rx="50" ry="2" fill="#000000" opacity="0.2"/>
+  
+  <!-- Car roof details -->
+  <path d="M50,47 C60,45 90,45 100,47" fill="none" stroke="#B71C1C" stroke-width="1"/>
+  
+  <!-- Car bumper details -->
+  <rect x="30" y="68" width="5" height="2" fill="#9E9E9E" stroke="#616161" stroke-width="0.5"/>
+  <rect x="115" y="68" width="5" height="2" fill="#9E9E9E" stroke="#616161" stroke-width="0.5"/>
+  
+  <!-- Car shine/highlights -->
+  <path d="M45,48 L47,48 C60,50 90,50 103,48 L105,48 L105,47 L45,47 Z" fill="#FFFFFF" opacity="0.3"/>
+  <path d="M32,58 L118,58" stroke="#FFFFFF" opacity="0.2" stroke-width="0.5"/>
+  
+  <!-- Speed lines -->
+  <g stroke="#FFFFFF" stroke-width="0.5" opacity="0.6">
+    <line x1="20" y1="50" x2="10" y2="50"/>
+    <line x1="15" y1="55" x2="5" y2="55"/>
+    <line x1="18" y1="60" x2="8" y2="60"/>
+    <line x1="12" y1="65" x2="2" y2="65"/>
+  </g>
+  
+  <!-- License plate (blank) -->
+  <rect x="65" y="67" width="20" height="5" rx="1" fill="#EEEEEE" stroke="#BDBDBD" stroke-width="0.5"/>
+  
+  <!-- Pixel art details -->
+  <rect x="42" y="53" width="2" height="2" fill="#FFFFFF" opacity="0.6"/>
+  <rect x="95" y="50" width="2" height="2" fill="#F44336" opacity="0.6"/>
+  <rect x="110" y="67" width="2" height="2" fill="#B71C1C" opacity="0.8"/>
+</svg> 

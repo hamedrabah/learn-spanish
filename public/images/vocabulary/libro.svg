@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="90" viewBox="0 0 100 90" xmlns="http://www.w3.org/2000/svg">
+  <!-- 16-bit style book (libro) -->
+  
+  <!-- Book cover -->
+  <rect x="15" y="20" width="70" height="50" fill="#3366cc" stroke="#003399" stroke-width="2"/>
+  
+  <!-- Book spine shadow -->
+  <rect x="15" y="20" width="10" height="50" fill="#003399"/>
+  
+  <!-- Book pages (edges) -->
+  <rect x="15" y="18" width="70" height="2" fill="#ffffff" stroke="#cccccc" stroke-width="1"/>
+  <rect x="85" y="20" width="2" height="50" fill="#ffffff" stroke="#cccccc" stroke-width="1"/>
+  <rect x="15" y="70" width="70" height="2" fill="#ffffff" stroke="#cccccc" stroke-width="1"/>
+  
+  <!-- Book bookmark -->
+  <rect x="70" y="18" width="5" height="15" fill="#ff3333" stroke="#cc0000" stroke-width="1"/>
+  
+  <!-- Book cover design - title lines -->
+  <rect x="30" y="30" width="45" height="3" fill="#ffcc00" stroke="#cc9900" stroke-width="0.5"/>
+  <rect x="30" y="38" width="35" height="3" fill="#ffcc00" stroke="#cc9900" stroke-width="0.5"/>
+  
+  <!-- Book cover design - decorative elements -->
+  <rect x="30" y="50" width="45" height="1" fill="#ffcc00" stroke="#cc9900" stroke-width="0.5"/>
+  <rect x="30" y="55" width="25" height="1" fill="#ffcc00" stroke="#cc9900" stroke-width="0.5"/>
+  <rect x="30" y="60" width="35" height="1" fill="#ffcc00" stroke="#cc9900" stroke-width="0.5"/>
+  
+  <!-- Book cover design - emblem/icon -->
+  <circle cx="25" cy="45" r="5" fill="#ffcc00" stroke="#cc9900" stroke-width="1"/>
+  
+  <!-- Open page effect (slightly open book) -->
+  <path d="M 15,20 Q 5,45 15,70" stroke="#003399" stroke-width="2" fill="none"/>
+  
+  <!-- Shadow under book -->
+  <ellipse cx="50" cy="80" rx="40" ry="5" fill="#000000" opacity="0.2"/>
+</svg> 
